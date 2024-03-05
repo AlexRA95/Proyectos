@@ -1,0 +1,184 @@
+main {
+
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+main .cajaprecio {
+
+
+
+    display: block;
+    width: 25rem;
+
+
+
+}
+
+main .cajaprecio .filagen {
+
+
+    display: flex;
+    padding: 0.3rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
+main .cajaprecio .filagen .espaciado {
+
+
+    width: 70%;
+
+
+}
+
+.fila1,
+.fila4 {
+
+    background-color: rgb(89, 89, 89);
+    color: white;
+    font-weight: bold;
+
+
+}
+
+.fila2,
+.fila5 {
+
+    background-color: rgb(181, 181, 181);
+
+}
+
+.fila3,
+.fila6 {
+
+    background-color: rgb(231, 229, 229);
+
+}
+
+.formulario {
+
+    margin-top: 1rem;
+    background-color: rgb(252, 255, 240);
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    width: 90%;
+    
+
+}
+
+form {
+
+    display: flex;
+    padding: 2rem;
+
+
+
+}
+
+.formizq {
+
+    
+    width: 100%;
+    display: flex;
+    
+    
+
+}
+
+.formder {
+
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.labels, .inputs{
+
+display: flex;
+flex-direction: column;
+
+}
+
+.inputs{
+
+    width: 50%;
+
+}
+
+.labels label{
+
+    margin: 1rem;
+    padding: 0.3rem;
+
+
+}
+
+.inputs input, .inputs select{
+
+    margin: 1rem;
+    padding: 0.3rem;
+    
+
+}
+
+
+
+.inputs input:invalid{
+
+    border: 2px solid red;
+    border-radius: 0.2rem;
+
+}
+
+.inputs input:valid{
+
+    border: 2px solid green;
+    border-radius: 0.2rem;
+
+}
+
+.inputs input:focus, .inputs select:focus{
+    padding: 0.8rem;
+    transition: linear 0.5s padding;
+    
+}
+
+
+.formder fieldset{
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.formder button{
+
+    width: 25%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content:  center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(67, 67, 245);
+    border: none;
+    border-radius: 0.2rem;
+
+}
+
+.formder button:hover{
+
+    cursor: pointer;
+
+}
+

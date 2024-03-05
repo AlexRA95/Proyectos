@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.main-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: url(../img/paisaje.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-image h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-image p{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.main-image button{
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-image button:hover{
+    background-color: lightgray;
+    transition:  0.5s;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+}
+
+.menu a{
+    margin-left: 4rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    position: sticky;
+    border-bottom: 3px solid transparent;
+}
+
+.menu a:hover{
+    border-bottom: 3px solid red;
+}
+
+.submain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+    background-color: #fff;
+}
+
+.submain .icono{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.submain .icono:hover{
+    background-color: lightgray;
+    border-top: 3px solid blue;
+}
+
+.submain .icono p{
+    color: #000;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.fa-tree{
+    color: green;
+}
+
+.fa-clock{
+    color: red;
+}
+
+.fa-map{
+    color: yellow;
+}
+
+.fa-utensils{
+    color: blue;
+}

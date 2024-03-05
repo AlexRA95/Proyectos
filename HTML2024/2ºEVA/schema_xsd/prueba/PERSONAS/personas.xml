@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="personas.xsd">
+    <persona idPersona="DS-33">
+    <nombre>Juán Antonio</nombre> 
+    <apellido>Bermejo</apellido>
+    <edad>35</edad> 
+    <dni>72.025.741-G</dni>
+    <telefono>965-698-147</telefono>
+    <direccion>Calle Corchito</direccion>
+    <caracteristicas>
+        <idioma nivel="B2">Inglés</idioma>
+        <lenguajeProgramacion nivel="B1">Java</lenguajeProgramacion>
+    </caracteristicas>
+</persona>
+
+   <persona idPersona="DS-21">
+    <nombre>Ana María</nombre>
+    <apellido>Sánchez</apellido>
+    <apellido>Cuesta</apellido>
+    <edad>21</edad>
+    <dni>21.321.987-F</dni>
+    <telefono>965-698-147</telefono>
+    <email>asacu@gmail.com</email>
+    <direccion>Calle Zafra</direccion>
+    <jefe idJefe="DS-33"/>
+    <caracteristicas>
+        <lenguajeProgramacion nivel="C1">Java</lenguajeProgramacion>
+    </caracteristicas>
+</persona>
+
+  <persona idPersona="DS-02">
+    <nombre>Sandra</nombre>
+    <apellido>Cuesta</apellido>
+    <apellido>Palacios</apellido>
+    <dni>07.123.456-X</dni>
+    <telefono>659-789-321</telefono>
+    <email>sandracuesta@educarex.es</email>
+    <direccion>Calle Caleros</direccion>
+    <caracteristicas>
+        <idioma nivel="C1">Inglés</idioma>
+    </caracteristicas>
+</persona>
+
+</personas>

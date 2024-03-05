@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>AtopeExtremadura</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="../../style/estilo.css" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <style>
+
+        .borde-titulo{
+            border-bottom: 0.1rem solid #9F9F9F;
+            margin: 1rem 0;
+        }
+
+        .filtro{
+            border: 0.1rem solid #9F9F9F;
+            
+        }
+
+        
+@media (max-width: 767.98px){
+
+
+.orden-filtro{
+  width: 50%; 
+}
+
+}
+
+
+@media (min-width: 767.99px){
+
+
+.orden-filtro{
+  width: 25%; 
+}
+
+}
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav
+        class="navbar navbar-expand-sm navbar-light navbar-fondo bg-gradient"
+      >
+        <div class="container-fluid">
+          <a href="../../index.html" class="navbar-brand logo">
+            <img src="../../img/logo.png" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <a href="../../index.html" class="text-decoration-none text-white">Inicio</a>
+            <ul class="navbar-nav me-1 mt-2 mt-lg-0 w-75">
+              <li class="nav-item dropdown mb-1 mb-sm-0 ms-sm-3 select-width">
+                <span class="d-none">Moneda</span>
+                <select
+                  name="moneda"
+                  id="moneda"
+                  class="form-select w-75 border-0"
+                >
+                  <option selected value="euro">Euros (€)</option>
+                  <option value="dollar">US Dollars ($)</option>
+                  <option value="australian">Australian Dollars ($)</option>
+                  <option value="canadian">Canadian Dollars ($)</option>
+                  <option value="new zelland">New Zealand Dollars ($)</option>
+                  <option value="british">British Pounds (£)</option>
+                  <option value="norwegian">Norwegian Krone (kr)</option>
+                  <option value="swedish">Swedish Krona (kr)</option>
+                  <option value="Danish">Danish Krone (Kr.)</option>
+                </select>
+              </li>
+              <li class="mt-2 mt-sm-0 select-width">
+                <select name="pais" class="form-select w-75 border-0">
+                  <option value="chino mandarín">Chino mandarín</option>
+                  <option selected value="español">Español</option>
+                  <option value="inglés">Inglés</option>
+                  <option value="hindi">Hindi</option>
+                  <option value="árabe">Árabe</option>
+                  <option value="portugués">Portugués</option>
+                  <option value="bengalí">Bengalí</option>
+                  <option value="ruso">Ruso</option>
+                  <option value="japonés">Japonés</option>
+                  <option value="francés">Francés</option>
+                </select>
+              </li>
+            </ul>
+            <form class="d-flex align-items-center my-2 my-lg-0 w-75">
+              <input
+                class="form-control me-2 w-75"
+                type="text"
+                placeholder="Buscar"
+              />
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <ul
+              class="navbar-nav d-flex flex-row justify-content-start mt-2 mt-lg-0 w-50"
+            >
+              <li>
+                <!-- Modal trigger button -->
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#inicio-sesion"
+                >
+                  <i class="bi bi-person-circle fs-1"></i>
+                </button>
+
+                <!-- Modal Body -->
+                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                <div
+                  class="modal fade"
+                  id="inicio-sesion"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="modalTitleId"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="container w-75">
+                          <div class="row mb-3">
+                            <div class="col form-floating">
+                              <input
+                                type="text"
+                                name=""
+                                id="user"
+                                class="form-control"
+                                placeholder="a"
+                              />
+                              <label for="" class="floatingInput ms-3"
+                                >Nombre de Usuario</label
+                              >
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                            <div class="col form-floating">
+                              <input
+                                type="password"
+                                name=""
+                                id="pass"
+                                class="form-control"
+                                placeholder="a"
+                              />
+                              <label for="" class="floatingInput ms-3"
+                                >Contraseña</label
+                              >
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                            <div class="col d-flex justify-content-center">
+                              <input
+                                type="checkbox"
+                                name=""
+                                id=""
+                                class="form-check-input"
+                              />
+                              <label for="" class="form-check-label ms-2"
+                                >Recordar datos de sesión</label
+                              >
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div
+                              class="col d-flex justify-content-center fw-bold"
+                            >
+                              <p>O si no tiene cuenta:</p>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col">
+                              <a
+                                href="../register/register.html"
+                                target="_blank"
+                                ><button class="btn btn-success form-control">
+                                  Registrarse
+                                </button></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer d-flex justify-content-evenly">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancelar
+                        </button>
+                        <button type="button" class="btn btn-success" onclick="admin()">
+                          Iniciar Sesión
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="../cart/cart.html"
+                  ><button class="btn">
+                    <i class="bi bi-cart fs-1 link-dark"></i></button
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-bordertop">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Categorias</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Vino
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../vino/tinto.html">Vino tinto</a></li>
+                  <li><a class="dropdown-item" href="../vino/blanco.html">Vino blanco</a></li>
+                  <li><a class="dropdown-item" href="#">Vino rosado</a></li>
+                  <li><a class="dropdown-item" href="#">Vino achampañado</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Jamón y embutidos
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="../jamon/iberico.html">Jamón ibérico</a></li>
+                  <li><a class="dropdown-item" href="../jamon/serrano.html">Jamón serrano</a></li>
+                  <li><a class="dropdown-item" href="#">Morcilla patatera</a></li>
+                  <li><a class="dropdown-item" href="#">Salchichón ibérico de bellota</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Queso
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="../queso/cabra.html">Queso de cabra</a></li>
+                  <li><a class="dropdown-item" href="#">Queso de cabra al pimentón</a></li>
+                  <li><a class="dropdown-item" href="#">Queso de oveja</a></li>
+                  <li><a class="dropdown-item" href="../queso/mezcla.html">Queso mezcla</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dulces
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="../dulces/bombon.html">Bombón de higo</a></li>
+                  <li><a class="dropdown-item" href="../dulces/rosca-dos.html">Roscas</a></li>
+                  <li><a class="dropdown-item" href="#">Mantecados</a></li>
+                  <li><a class="dropdown-item" href="#">Perrunillas</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Aceite de oliva
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="../aceite/virgen.html">Aceite de oliva virgen</a></li>
+                  <li><a class="dropdown-item" href="../aceite/virgenextra.html">Aceite de oliva virgen extra</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cava
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="#">Cava brut</a></li>
+                  <li><a class="dropdown-item" href="#">Cava seco</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Frutos secos
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="#">Bolsas</a></li>
+                  <li><a class="dropdown-item" href="#">En bote</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Conservas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tomate frito</a></li>
+                  <li><a class="dropdown-item" href="#">Esparragos</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pimentón
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="#">Pimenton</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="borde-titulo">Queso mezcla</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="" class="form-label"></label>
+                  <select class="form-select form-select-lg  orden-filtro" name="" id="">
+                    <option selected>Ordenar:</option>
+                    <option value="">Precio: más bajo primero</option>
+                    <option value="">Precio: más alto primero</option>
+                    <option value="">Nombre: A hasta Z</option>
+                    <option value="">Nombre: Z hasta A</option>
+                    <option value="">En stock</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
+                <!--Productos-->
+                <div class="col-12">
+
+                    <div class="container-fluid">
+
+                        <div class="row mt-3">
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso-5.png" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso curado mezcla  2,5KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>55,20€</p>
+                                    <p><span class="text-warning">★★★★</span>★</p>
+                                    <a href="mezcla-uno.html" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso-5.png" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso curado mezcla 1KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>32,80€</p>
+                                    <p><span class="text-warning">★★★★</span>★</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch mt-2">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso-5.png" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso curado mezcla 0,5KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>15,40€</p>
+                                    <p><span class="text-warning">★★★★</span>★</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch mt-2">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso-5.png" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso curado mezcla 0,25KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>5,00€</p>
+                                    <p><span class="text-warning">★★★★</span>★</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-3">
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso1.jpg" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso viejo mezcla 2,5 KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>67,00€</p>
+                                    <p><span class="text-warning">★★★</span>★★</p>
+                                    <a href="mezcla-dos.html" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso1.jpg" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso viejo mezcla 1 KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>38,89€</p>
+                                    <p><span class="text-warning">★★★</span>★★</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch mt-2">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso1.jpg" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso viejo mezcla 0,5 KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-danger text-decoration-line-through">Sin stock</p>
+                                    <p>14,00€</p>
+                                    <p><span class="text-warning">★★★★★</span></p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch mt-2">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso1.jpg" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso viejo mezcla 0,25 KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>7,45€</p>
+                                    <p><span class="text-warning">★★★★</span>★</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-3">
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso-6.png" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso mezcla curado 1 KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>14,74€</p>
+                                    <p><span class="text-warning">★★★★</span>★</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3 d-flex align-items-stretch">
+                                <div class="card d-flex align-items-center text-center slider-cajas">
+                                  <img src="../../img/queso-6.png" class="card-img-top img-fluid"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title fs-4">Queso mezcla curado 0,5 KG</h5>
+                                    <p class="card-text text-secondary">Queso mezcla</p>
+                                    <p class="text-success">En stock</p>
+                                    <p>7,69€</p>
+                                    <p><span class="text-warning">★★★★</span>★</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+      
+      <div class="container-fluid footer mt-4 text-white">
+        <div class="container p-2">
+          <div class="row d-flex flex-column flex-md-row text-center">
+            <div class="col">
+              <ul class="list-unstyled">
+                <li>
+                  <h3>Vinos</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="../vino/tinto.html" class="enlace-blanco">Vino tinto</a></li>
+                    <li><a href="../vino/blanco.html" class="enlace-blanco">Vino blanco</a></li>
+                    <li><a href="#" class="enlace-blanco">Vino rosado</a></li>
+                    <li>
+                      <a href="#" class="enlace-blanco">Vino achampañado</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled">
+                <li>
+                  <h3>Jamón y embutidos</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="../jamon/iberico.html" class="enlace-blanco">Jamón ibérico</a></li>
+                    <li><a href="../jamon/serrano.html" class="enlace-blanco">Jamón serrano</a></li>
+                    <li>
+                      <a href="#" class="enlace-blanco">Morcilla patatera</a>
+                    </li>
+                    <li>
+                      <a href="#" class="enlace-blanco"
+                        >Salchichón ibérico de bellota</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled">
+                <li>
+                  <h3>Queso</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="../queso/cabra.html" class="enlace-blanco">Queso de cabra</a></li>
+                    <li>
+                      <a href="#" class="enlace-blanco"
+                        >Queso de cabra al pimentón</a
+                      >
+                    </li>
+                    <li><a href="#" class="enlace-blanco">Queso de oveja</a></li>
+                    <li><a href="../queso/mezcla.html" class="enlace-blanco">Queso mezcla</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled">
+                <li>
+                  <h3>Dulces</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="../dulces/bombon.html" class="enlace-blanco">Bombón de higo</a></li>
+                    <li><a href="../dulces/roscas.html" class="enlace-blanco">Roscas</a></li>
+                    <li><a href="#" class="enlace-blanco">Mantecados</a></li>
+                    <li><a href="#" class="enlace-blanco">Perrunillas</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mb-4 mt-4 d-flex flex-column flex-lg-row">
+            <div class="col d-flex flex-column fs-4 text-center footer-middle2">
+              <h3>Comunidad</h3>
+              <a href="https://www.instagram.com/" class="link-claro"
+                ><i class="bi bi-instagram"></i> Instagram</a
+              >
+              <a href="https://twitter.com/" class="link-claro"
+                ><i class="bi bi-twitter"></i> Twitter</a
+              >
+              <a href="https://es-es.facebook.com/" class="link-claro"
+                ><i class="bi bi-facebook"></i> Facebook</a
+              >
+              <a href="https://web.telegram.org/k/" class="link-claro"
+                ><i class="bi bi-telegram"></i> Telegram</a
+              >
+              <a href="https://www.youtube.com/" class="link-claro"
+                ><i class="bi bi-youtube"></i> Youtube</a
+              >
+              <a href="https://www.tiktok.com/es/" class="link-claro"
+                ><i class="bi bi-tiktok"></i> TikTok</a
+              >
+              <a href="https://www.twitch.tv/" class="link-claro"
+                ><i class="bi bi-twitch"></i> Twitch</a
+              >
+            </div>
+            <div class="col d-flex flex-column footer-middle text-center">
+              <div class="d-flex flex-column">
+                <h4>AtopeExtremadura en</h4>
+                <select name="pais" class="form-select">
+                  <option value="AF">Afganistán</option>
+                  <option value="AL">Albania</option>
+                  <option value="DE">Alemania</option>
+                  <option value="AD">Andorra</option>
+                  <option value="AO">Angola</option>
+                  <option value="AI">Anguilla</option>
+                  <option value="AQ">Antártida</option>
+                  <option value="AG">Antigua y Barbuda</option>
+                  <option value="AN">Antillas Holandesas</option>
+                  <option value="SA">Arabia Saudí</option>
+                  <option value="DZ">Argelia</option>
+                  <option value="AR">Argentina</option>
+                  <option value="AM">Armenia</option>
+                  <option value="AW">Aruba</option>
+                  <option value="AU">Australia</option>
+                  <option value="AT">Austria</option>
+                  <option value="AZ">Azerbaiyán</option>
+                  <option value="BS">Bahamas</option>
+                  <option value="BH">Bahrein</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="BB">Barbados</option>
+                  <option value="BE">Bélgica</option>
+                  <option value="BZ">Belice</option>
+                  <option value="BJ">Benin</option>
+                  <option value="BM">Bermudas</option>
+                  <option value="BY">Bielorrusia</option>
+                  <option value="MM">Birmania</option>
+                  <option value="BO">Bolivia</option>
+                  <option value="BA">Bosnia y Herzegovina</option>
+                  <option value="BW">Botswana</option>
+                  <option value="BR">Brasil</option>
+                  <option value="BN">Brunei</option>
+                  <option value="BG">Bulgaria</option>
+                  <option value="BF">Burkina Faso</option>
+                  <option value="BI">Burundi</option>
+                  <option value="BT">Bután</option>
+                  <option value="CV">Cabo Verde</option>
+                  <option value="KH">Camboya</option>
+                  <option value="CM">Camerún</option>
+                  <option value="CA">Canadá</option>
+                  <option value="TD">Chad</option>
+                  <option value="CL">Chile</option>
+                  <option value="CN">China</option>
+                  <option value="CY">Chipre</option>
+                  <option value="VA">Ciudad del Vaticano (Santa Sede)</option>
+                  <option value="CO">Colombia</option>
+                  <option value="KM">Comores</option>
+                  <option value="CG">Congo</option>
+                  <option value="CD">Congo, República Democrática del</option>
+                  <option value="KR">Corea</option>
+                  <option value="KP">Corea del Norte</option>
+                  <option value="CI">Costa de Marfíl</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="HR">Croacia (Hrvatska)</option>
+                  <option value="CU">Cuba</option>
+                  <option value="DK">Dinamarca</option>
+                  <option value="DJ">Djibouti</option>
+                  <option value="DM">Dominica</option>
+                  <option value="EC">Ecuador</option>
+                  <option value="EG">Egipto</option>
+                  <option value="SV">El Salvador</option>
+                  <option value="AE">Emiratos Árabes Unidos</option>
+                  <option value="ER">Eritrea</option>
+                  <option value="SI">Eslovenia</option>
+                  <option value="ES" selected>España</option>
+                  <option value="US">Estados Unidos</option>
+                  <option value="EE">Estonia</option>
+                  <option value="ET">Etiopía</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="PH">Filipinas</option>
+                  <option value="FI">Finlandia</option>
+                  <option value="FR">Francia</option>
+                  <option value="GA">Gabón</option>
+                  <option value="GM">Gambia</option>
+                  <option value="GE">Georgia</option>
+                  <option value="GH">Ghana</option>
+                  <option value="GI">Gibraltar</option>
+                  <option value="GD">Granada</option>
+                  <option value="GR">Grecia</option>
+                  <option value="GL">Groenlandia</option>
+                  <option value="GP">Guadalupe</option>
+                  <option value="GU">Guam</option>
+                  <option value="GT">Guatemala</option>
+                  <option value="GY">Guayana</option>
+                  <option value="GF">Guayana Francesa</option>
+                  <option value="GN">Guinea</option>
+                  <option value="GQ">Guinea Ecuatorial</option>
+                  <option value="GW">Guinea-Bissau</option>
+                  <option value="HT">Haití</option>
+                  <option value="HN">Honduras</option>
+                  <option value="HU">Hungría</option>
+                  <option value="IN">India</option>
+                  <option value="ID">Indonesia</option>
+                  <option value="IQ">Irak</option>
+                  <option value="IR">Irán</option>
+                  <option value="IE">Irlanda</option>
+                  <option value="BV">Isla Bouvet</option>
+                  <option value="CX">Isla de Christmas</option>
+                  <option value="IS">Islandia</option>
+                  <option value="KY">Islas Caimán</option>
+                  <option value="CK">Islas Cook</option>
+                  <option value="CC">Islas de Cocos o Keeling</option>
+                  <option value="FO">Islas Faroe</option>
+                  <option value="HM">Islas Heard y McDonald</option>
+                  <option value="FK">Islas Malvinas</option>
+                  <option value="MP">Islas Marianas del Norte</option>
+                  <option value="MH">Islas Marshall</option>
+                  <option value="UM">Islas menores de Estados Unidos</option>
+                  <option value="PW">Islas Palau</option>
+                  <option value="SB">Islas Salomón</option>
+                  <option value="SJ">Islas Svalbard y Jan Mayen</option>
+                  <option value="TK">Islas Tokelau</option>
+                  <option value="TC">Islas Turks y Caicos</option>
+                  <option value="VI">Islas Vírgenes (EEUU)</option>
+                  <option value="VG">Islas Vírgenes (Reino Unido)</option>
+                  <option value="WF">Islas Wallis y Futuna</option>
+                  <option value="IL">Israel</option>
+                  <option value="IT">Italia</option>
+                  <option value="JM">Jamaica</option>
+                  <option value="JP">Japón</option>
+                  <option value="JO">Jordania</option>
+                  <option value="KZ">Kazajistán</option>
+                  <option value="KE">Kenia</option>
+                  <option value="KG">Kirguizistán</option>
+                  <option value="KI">Kiribati</option>
+                  <option value="KW">Kuwait</option>
+                  <option value="LA">Laos</option>
+                  <option value="LS">Lesotho</option>
+                  <option value="LV">Letonia</option>
+                  <option value="LB">Líbano</option>
+                  <option value="LR">Liberia</option>
+                  <option value="LY">Libia</option>
+                  <option value="LI">Liechtenstein</option>
+                  <option value="LT">Lituania</option>
+                  <option value="LU">Luxemburgo</option>
+                  <option value="MK">
+                    Macedonia, Ex-República Yugoslava de
+                  </option>
+                  <option value="MG">Madagascar</option>
+                  <option value="MY">Malasia</option>
+                  <option value="MW">Malawi</option>
+                  <option value="MV">Maldivas</option>
+                  <option value="ML">Malí</option>
+                  <option value="MT">Malta</option>
+                  <option value="MA">Marruecos</option>
+                  <option value="MQ">Martinica</option>
+                  <option value="MU">Mauricio</option>
+                  <option value="MR">Mauritania</option>
+                  <option value="YT">Mayotte</option>
+                  <option value="MX">México</option>
+                  <option value="FM">Micronesia</option>
+                  <option value="MD">Moldavia</option>
+                  <option value="MC">Mónaco</option>
+                  <option value="MN">Mongolia</option>
+                  <option value="MS">Montserrat</option>
+                  <option value="MZ">Mozambique</option>
+                  <option value="NA">Namibia</option>
+                  <option value="NR">Nauru</option>
+                  <option value="NP">Nepal</option>
+                  <option value="NI">Nicaragua</option>
+                  <option value="NE">Níger</option>
+                  <option value="NG">Nigeria</option>
+                  <option value="NU">Niue</option>
+                  <option value="NF">Norfolk</option>
+                  <option value="NO">Noruega</option>
+                  <option value="NC">Nueva Caledonia</option>
+                  <option value="NZ">Nueva Zelanda</option>
+                  <option value="OM">Omán</option>
+                  <option value="NL">Países Bajos</option>
+                  <option value="PA">Panamá</option>
+                  <option value="PG">Papúa Nueva Guinea</option>
+                  <option value="PK">Paquistán</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="PE">Perú</option>
+                  <option value="PN">Pitcairn</option>
+                  <option value="PF">Polinesia Francesa</option>
+                  <option value="PL">Polonia</option>
+                  <option value="PT">Portugal</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="QA">Qatar</option>
+                  <option value="UK">Reino Unido</option>
+                  <option value="CF">República Centroafricana</option>
+                  <option value="CZ">República Checa</option>
+                  <option value="ZA">República de Sudáfrica</option>
+                  <option value="DO">República Dominicana</option>
+                  <option value="SK">República Eslovaca</option>
+                  <option value="RE">Reunión</option>
+                  <option value="RW">Ruanda</option>
+                  <option value="RO">Rumania</option>
+                  <option value="RU">Rusia</option>
+                  <option value="EH">Sahara Occidental</option>
+                  <option value="KN">Saint Kitts y Nevis</option>
+                  <option value="WS">Samoa</option>
+                  <option value="AS">Samoa Americana</option>
+                  <option value="SM">San Marino</option>
+                  <option value="VC">San Vicente y Granadinas</option>
+                  <option value="SH">Santa Helena</option>
+                  <option value="LC">Santa Lucía</option>
+                  <option value="ST">Santo Tomé y Príncipe</option>
+                  <option value="SN">Senegal</option>
+                  <option value="SC">Seychelles</option>
+                  <option value="SL">Sierra Leona</option>
+                  <option value="SG">Singapur</option>
+                  <option value="SY">Siria</option>
+                  <option value="SO">Somalia</option>
+                  <option value="LK">Sri Lanka</option>
+                  <option value="PM">St Pierre y Miquelon</option>
+                  <option value="SZ">Suazilandia</option>
+                  <option value="SD">Sudán</option>
+                  <option value="SE">Suecia</option>
+                  <option value="CH">Suiza</option>
+                  <option value="SR">Surinam</option>
+                  <option value="TH">Tailandia</option>
+                  <option value="TW">Taiwán</option>
+                  <option value="TZ">Tanzania</option>
+                  <option value="TJ">Tayikistán</option>
+                  <option value="TF">Territorios franceses del Sur</option>
+                  <option value="TP">Timor Oriental</option>
+                  <option value="TG">Togo</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TT">Trinidad y Tobago</option>
+                  <option value="TN">Túnez</option>
+                  <option value="TM">Turkmenistán</option>
+                  <option value="TR">Turquía</option>
+                  <option value="TV">Tuvalu</option>
+                  <option value="UA">Ucrania</option>
+                  <option value="UG">Uganda</option>
+                  <option value="UY">Uruguay</option>
+                  <option value="UZ">Uzbekistán</option>
+                  <option value="VU">Vanuatu</option>
+                  <option value="VE">Venezuela</option>
+                  <option value="VN">Vietnam</option>
+                  <option value="YE">Yemen</option>
+                  <option value="YU">Yugoslavia</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabue</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column">
+                <h4>Descarga nuestra App</h4>
+                <a href="" class="link-claro fs-4"
+                  ><i class="bi bi-android2"></i> Descarga app en Google Play</a
+                >
+                <a href="" class="link-claro fs-4"
+                  ><i class="bi bi-apple"></i> Descarga nuestra app en App
+                  Store</a
+                >
+              </div>
+              <div class="d-flex justify-content-around mt-2">
+                <svg
+                  width="54"
+                  height="32"
+                  viewBox="0 0 54 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M45.6297 20.3044V19.8422H45.5109L45.3736 20.1597L45.2369 19.8422H45.1175V20.3044H45.2018V19.9558L45.3303 20.2567H45.4176L45.546 19.9551V20.3044H45.6297ZM44.8763 20.3044V19.921H45.0286V19.8429H44.6404V19.921H44.7927V20.3044H44.8763Z"
+                    fill="#0099DF"
+                  ></path>
+                  <path
+                    d="M32.1305 22.2928H21.8557V3.55005H32.1305V22.2928Z"
+                    fill="#6C6BBD"
+                  ></path>
+                  <path
+                    d="M22.5145 12.9199C22.5145 9.11781 24.2683 5.73104 26.9995 3.54848C25.0022 1.95248 22.4816 0.999882 19.7422 0.999882C13.257 0.999882 8 6.33655 8 12.9199C8 19.5032 13.257 24.8398 19.7422 24.8398C22.4816 24.8398 25.0022 23.8872 26.9995 22.2912C24.2683 20.1087 22.5145 16.7219 22.5145 12.9199Z"
+                    fill="#EB001B"
+                  ></path>
+                  <path
+                    d="M45.988 12.9199C45.988 19.5032 40.731 24.8398 34.2458 24.8398C31.5064 24.8398 28.9858 23.8872 26.9878 22.2912C29.7197 20.1087 31.4735 16.7219 31.4735 12.9199C31.4735 9.11781 29.7197 5.73104 26.9878 3.54848C28.9858 1.95248 31.5064 0.999882 34.2458 0.999882C40.731 0.999882 45.988 6.33655 45.988 12.9199Z"
+                    fill="#0099DF"
+                  ></path>
+                  <path
+                    d="M35.5948 27.5856C35.7315 27.5856 35.9278 27.6121 36.0779 27.672L35.8689 28.3207C35.7255 28.2608 35.5822 28.2411 35.4448 28.2411C35.0013 28.2411 34.7795 28.5321 34.7795 29.055V30.8299H34.1008V27.6652H34.7728V28.0494C34.949 27.7712 35.2036 27.5856 35.5948 27.5856ZM33.0877 28.2942H31.9789V29.7242C31.9789 30.0417 32.0894 30.2539 32.4291 30.2539C32.6053 30.2539 32.8271 30.194 33.0287 30.0751L33.2243 30.6639C33.0093 30.8162 32.6703 30.9094 32.3769 30.9094C31.5742 30.9094 31.2943 30.4722 31.2943 29.7371V28.2942H30.6611V27.6652H31.2943V26.705H31.9789V27.6652H33.0877V28.2942ZM24.4051 28.9694C24.4775 28.5124 24.7508 28.2009 25.2339 28.2009C25.6707 28.2009 25.9514 28.4791 26.0231 28.9694H24.4051ZM26.7279 29.2475C26.7212 28.2608 26.1209 27.5856 25.2466 27.5856C24.3334 27.5856 23.6943 28.2608 23.6943 29.2475C23.6943 30.2532 24.3596 30.9087 25.2929 30.9087C25.7625 30.9087 26.1925 30.7897 26.5711 30.4654L26.2381 29.9553C25.9775 30.1675 25.6445 30.2865 25.3317 30.2865C24.8949 30.2865 24.497 30.0811 24.3991 29.512H26.7144C26.7212 29.4256 26.7279 29.34 26.7279 29.2475ZM29.7084 28.473C29.5195 28.3533 29.135 28.2009 28.7371 28.2009C28.3652 28.2009 28.1435 28.3404 28.1435 28.5723C28.1435 28.7837 28.3779 28.8436 28.6714 28.883L28.9909 28.9292C29.6696 29.0293 30.0802 29.3203 30.0802 29.8765C30.0802 30.479 29.5584 30.9094 28.6587 30.9094C28.1495 30.9094 27.6798 30.7768 27.308 30.4987L27.6276 29.9622C27.856 30.141 28.1958 30.2933 28.6654 30.2933C29.1283 30.2933 29.3762 30.1546 29.3762 29.9091C29.3762 29.731 29.2 29.631 28.8281 29.5787L28.5086 29.5325C27.8105 29.4324 27.432 29.1149 27.432 28.5988C27.432 27.9698 27.9412 27.5856 28.7303 27.5856C29.2261 27.5856 29.6763 27.6985 30.0018 27.9168L29.7084 28.473ZM38.0744 28.2396C37.9348 28.2396 37.8056 28.2646 37.6854 28.3139C37.5659 28.3639 37.4622 28.4336 37.3748 28.523C37.2875 28.6124 37.2188 28.7201 37.1687 28.8451C37.1187 28.9701 37.0941 29.1081 37.0941 29.2581C37.0941 29.4089 37.1187 29.5461 37.1687 29.6711C37.2188 29.7962 37.2875 29.9038 37.3748 29.9932C37.4622 30.0826 37.5659 30.1524 37.6854 30.2024C37.8056 30.2524 37.9348 30.2767 38.0744 30.2767C38.214 30.2767 38.3439 30.2524 38.4634 30.2024C38.5836 30.1524 38.6881 30.0826 38.7755 29.9932C38.8643 29.9038 38.933 29.7962 38.9838 29.6711C39.0338 29.5461 39.0585 29.4089 39.0585 29.2581C39.0585 29.1081 39.0338 28.9701 38.9838 28.8451C38.933 28.7201 38.8643 28.6124 38.7755 28.523C38.6881 28.4336 38.5836 28.3639 38.4634 28.3139C38.3439 28.2646 38.214 28.2396 38.0744 28.2396ZM38.0744 27.5856C38.3163 27.5856 38.5403 27.628 38.7464 27.7137C38.9524 27.7985 39.1309 27.916 39.281 28.0653C39.4318 28.2146 39.549 28.3912 39.6341 28.5943C39.7192 28.7981 39.7618 29.0194 39.7618 29.2581C39.7618 29.4968 39.7192 29.7181 39.6341 29.922C39.549 30.1251 39.4318 30.3024 39.281 30.4517C39.1309 30.601 38.9524 30.7177 38.7464 30.8033C38.5403 30.8882 38.3163 30.9307 38.0744 30.9307C37.8325 30.9307 37.6085 30.8882 37.4024 30.8033C37.1964 30.7177 37.0194 30.601 36.8701 30.4517C36.7208 30.3024 36.6035 30.1251 36.5184 29.922C36.4333 29.7181 36.3908 29.4968 36.3908 29.2581C36.3908 29.0194 36.4333 28.7981 36.5184 28.5943C36.6035 28.3912 36.7208 28.2146 36.8701 28.0653C37.0194 27.916 37.1964 27.7985 37.4024 27.7137C37.6085 27.628 37.8325 27.5856 38.0744 27.5856ZM20.442 29.2475C20.442 28.6913 20.8011 28.2343 21.388 28.2343C21.9487 28.2343 22.3273 28.6716 22.3273 29.2475C22.3273 29.8235 21.9487 30.26 21.388 30.26C20.8011 30.26 20.442 29.8038 20.442 29.2475ZM22.9664 29.2475V27.6652H22.2884V28.0494C22.0726 27.7644 21.7471 27.5856 21.3036 27.5856C20.4293 27.5856 19.7447 28.2805 19.7447 29.2475C19.7447 30.2138 20.4293 30.9094 21.3036 30.9094C21.7471 30.9094 22.0726 30.7306 22.2884 30.4456V30.8299H22.9664V29.2475ZM19.1444 30.8299V28.8436C19.1444 28.0956 18.6747 27.5924 17.9184 27.5856C17.5205 27.5788 17.1091 27.7046 16.8224 28.1487C16.6073 27.7978 16.2676 27.5856 15.7913 27.5856C15.459 27.5856 15.1327 27.6849 14.8781 28.0554V27.6652H14.2002V30.8299H14.8849V29.0755C14.8849 28.5261 15.185 28.2343 15.6479 28.2343C16.0981 28.2343 16.3266 28.5321 16.3266 29.0687V30.8299H17.0113V29.0755C17.0113 28.5261 17.3248 28.2343 17.7743 28.2343C18.238 28.2343 18.4597 28.5321 18.4597 29.0687V30.8299H19.1444Z"
+                    fill="#231F20"
+                  ></path>
+                  <path
+                    d="M40.4928 30.5928V30.6709H40.5638C40.5794 30.6709 40.5929 30.6671 40.6018 30.661C40.6115 30.6549 40.6168 30.6443 40.6168 30.6314C40.6168 30.6186 40.6115 30.6087 40.6018 30.6026C40.5929 30.5958 40.5794 30.5928 40.5638 30.5928H40.4928ZM40.5645 30.5382C40.6011 30.5382 40.6295 30.5466 40.6496 30.5632C40.6698 30.5799 40.6795 30.6026 40.6795 30.6314C40.6795 30.6557 40.672 30.6754 40.6556 30.6913C40.6399 30.7065 40.6168 30.7163 40.5876 30.7201L40.6817 30.83H40.6086L40.5212 30.7209H40.4928V30.83H40.4316V30.5382H40.5645ZM40.5458 30.93C40.5794 30.93 40.6108 30.924 40.6392 30.9111C40.6683 30.8982 40.6937 30.8808 40.7153 30.8588C40.737 30.8368 40.7541 30.8111 40.7668 30.7807C40.7788 30.7512 40.7855 30.7194 40.7855 30.6853C40.7855 30.6512 40.7788 30.6193 40.7668 30.5898C40.7541 30.5602 40.737 30.5337 40.7153 30.5117C40.6937 30.4897 40.6683 30.4723 40.6392 30.4602C40.6108 30.4473 40.5794 30.4412 40.5458 30.4412C40.5122 30.4412 40.4801 30.4473 40.451 30.4602C40.4211 30.4723 40.395 30.4897 40.3734 30.5117C40.3517 30.5337 40.3345 30.5602 40.3226 30.5898C40.3099 30.6193 40.3039 30.6512 40.3039 30.6853C40.3039 30.7194 40.3099 30.7512 40.3226 30.7807C40.3345 30.8111 40.3517 30.8368 40.3734 30.8588C40.395 30.8808 40.4211 30.8982 40.451 30.9111C40.4801 30.924 40.5122 30.93 40.5458 30.93ZM40.5458 30.3708C40.5899 30.3708 40.6302 30.3791 40.6683 30.3958C40.7071 30.4117 40.74 30.4344 40.7691 30.4632C40.7975 30.4912 40.8199 30.5246 40.8363 30.5632C40.8527 30.6011 40.8609 30.6421 40.8609 30.6853C40.8609 30.7284 40.8527 30.7694 40.8363 30.8073C40.8199 30.8452 40.7975 30.8785 40.7691 30.9065C40.74 30.9353 40.7071 30.9581 40.6683 30.9747C40.6302 30.9914 40.5899 30.9998 40.5458 30.9998C40.501 30.9998 40.46 30.9914 40.4211 30.9747C40.3823 30.9581 40.3487 30.9353 40.3204 30.9065C40.292 30.8785 40.2696 30.8452 40.2532 30.8073C40.2367 30.7694 40.2285 30.7284 40.2285 30.6853C40.2285 30.6421 40.2367 30.6011 40.2532 30.5632C40.2696 30.5246 40.292 30.4912 40.3204 30.4632C40.3487 30.4344 40.3823 30.4117 40.4211 30.3958C40.46 30.3791 40.501 30.3708 40.5458 30.3708Z"
+                    fill="#231F20"
+                  ></path>
+                </svg>
+                <svg
+                  width="54"
+                  height="32"
+                  viewBox="0 0 54 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M45.2118 30.5889V30.667H45.2827C45.2984 30.667 45.3119 30.6632 45.3216 30.6571C45.3305 30.6511 45.3358 30.6405 45.3358 30.6276C45.3358 30.6147 45.3305 30.6049 45.3216 30.5988C45.3119 30.592 45.2984 30.5889 45.2827 30.5889H45.2118ZM45.2835 30.5344C45.3201 30.5344 45.3485 30.5427 45.3686 30.5594C45.3888 30.5761 45.3985 30.5988 45.3985 30.6276C45.3985 30.6518 45.391 30.6715 45.3746 30.6875C45.3589 30.7026 45.3365 30.7125 45.3066 30.7162L45.4007 30.8261H45.3275L45.2402 30.717H45.2118V30.8261H45.1506V30.5344H45.2835ZM45.2648 30.9269C45.2984 30.9269 45.3298 30.9201 45.3582 30.9072C45.3873 30.8943 45.4127 30.8769 45.4343 30.8549C45.456 30.8329 45.4731 30.8072 45.4858 30.7769C45.4978 30.7473 45.5045 30.7155 45.5045 30.6814C45.5045 30.6473 45.4978 30.6155 45.4858 30.5859C45.4731 30.5564 45.456 30.5298 45.4343 30.5079C45.4127 30.4859 45.3873 30.4685 45.3582 30.4556C45.3298 30.4435 45.2984 30.4374 45.2648 30.4374C45.2312 30.4374 45.1991 30.4435 45.17 30.4556C45.1401 30.4685 45.114 30.4859 45.0924 30.5079C45.0707 30.5298 45.0535 30.5564 45.0416 30.5859C45.0289 30.6155 45.0229 30.6473 45.0229 30.6814C45.0229 30.7155 45.0289 30.7473 45.0416 30.7769C45.0535 30.8072 45.0707 30.8329 45.0924 30.8549C45.114 30.8769 45.1401 30.8943 45.17 30.9072C45.1991 30.9201 45.2312 30.9269 45.2648 30.9269ZM45.2648 30.3669C45.3089 30.3669 45.3492 30.3753 45.388 30.3919C45.4261 30.4078 45.459 30.4306 45.4881 30.4594C45.5164 30.4874 45.5388 30.5207 45.5553 30.5594C45.5717 30.5973 45.5799 30.6382 45.5799 30.6814C45.5799 30.7246 45.5717 30.7655 45.5553 30.8034C45.5388 30.8413 45.5164 30.8746 45.4881 30.9034C45.459 30.9314 45.4261 30.9542 45.388 30.9708C45.3492 30.9875 45.3089 30.9958 45.2648 30.9958C45.22 30.9958 45.179 30.9875 45.1401 30.9708C45.1013 30.9542 45.0677 30.9314 45.0393 30.9034C45.011 30.8746 44.9886 30.8413 44.9722 30.8034C44.9557 30.7655 44.9475 30.7246 44.9475 30.6814C44.9475 30.6382 44.9557 30.5973 44.9722 30.5594C44.9886 30.5207 45.011 30.4874 45.0393 30.4594C45.0677 30.4306 45.1013 30.4078 45.1401 30.3919C45.179 30.3753 45.22 30.3669 45.2648 30.3669ZM16.1754 29.2432C16.1754 28.687 16.5346 28.2301 17.1214 28.2301C17.6821 28.2301 18.0607 28.6673 18.0607 29.2432C18.0607 29.8191 17.6821 30.2563 17.1214 30.2563C16.5346 30.2563 16.1754 29.7994 16.1754 29.2432ZM18.6998 29.2432V27.661H18.0218V28.0452C17.8068 27.7603 17.4805 27.5815 17.037 27.5815C16.1627 27.5815 15.4773 28.2771 15.4773 29.2432C15.4773 30.2101 16.1627 30.9049 17.037 30.9049C17.4805 30.9049 17.8068 30.7261 18.0218 30.4412V30.8254H18.6998V29.2432ZM41.6093 29.2432C41.6093 28.687 41.9685 28.2301 42.5553 28.2301C43.1168 28.2301 43.4946 28.6673 43.4946 29.2432C43.4946 29.8191 43.1168 30.2563 42.5553 30.2563C41.9685 30.2563 41.6093 29.7994 41.6093 29.2432ZM44.1344 29.2432V26.3903H43.4557V28.0452C43.2407 27.7603 42.9144 27.5815 42.4709 27.5815C41.5966 27.5815 40.9112 28.2771 40.9112 29.2432C40.9112 30.2101 41.5966 30.9049 42.4709 30.9049C42.9144 30.9049 43.2407 30.7261 43.4557 30.4412V30.8254H44.1344V29.2432ZM27.115 28.1975C27.5518 28.1975 27.8325 28.4756 27.9042 28.9651H26.2863C26.3587 28.5082 26.632 28.1975 27.115 28.1975ZM27.1285 27.5815C26.2146 27.5815 25.5755 28.2566 25.5755 29.2432C25.5755 30.2495 26.2407 30.9049 27.174 30.9049C27.6436 30.9049 28.0737 30.786 28.4522 30.4616L28.12 29.9517C27.8587 30.1631 27.5257 30.2828 27.2128 30.2828C26.7761 30.2828 26.3781 30.0775 26.2803 29.5077H28.5956C28.6023 29.422 28.609 29.3356 28.609 29.2432C28.6023 28.2566 28.002 27.5815 27.1285 27.5815ZM35.3145 29.2432C35.3145 28.687 35.6736 28.2301 36.2605 28.2301C36.8212 28.2301 37.1997 28.6673 37.1997 29.2432C37.1997 29.8191 36.8212 30.2563 36.2605 30.2563C35.6736 30.2563 35.3145 29.7994 35.3145 29.2432ZM37.8389 29.2432V27.661H37.1609V28.0452C36.9451 27.7603 36.6196 27.5815 36.1761 27.5815C35.3018 27.5815 34.6164 28.2771 34.6164 29.2432C34.6164 30.2101 35.3018 30.9049 36.1761 30.9049C36.6196 30.9049 36.9451 30.7261 37.1609 30.4412V30.8254H37.8389V29.2432ZM31.4858 29.2432C31.4858 30.2033 32.1443 30.9049 33.1493 30.9049C33.6189 30.9049 33.9318 30.7988 34.2707 30.5276L33.9452 29.9714C33.6906 30.157 33.4233 30.2563 33.1291 30.2563C32.5878 30.2495 32.1899 29.8524 32.1899 29.2432C32.1899 28.634 32.5878 28.2369 33.1291 28.2301C33.4233 28.2301 33.6906 28.3294 33.9452 28.515L34.2707 27.9588C33.9318 27.6876 33.6189 27.5815 33.1493 27.5815C32.1443 27.5815 31.4858 28.2831 31.4858 29.2432ZM40.2266 27.5815C39.8353 27.5815 39.5807 27.7671 39.4045 28.0452V27.661H38.7326V30.8254H39.4113V29.0515C39.4113 28.5279 39.633 28.2369 40.0765 28.2369C40.2139 28.2369 40.3572 28.2566 40.5006 28.3165L40.7096 27.6679C40.5596 27.608 40.364 27.5815 40.2266 27.5815ZM22.0529 27.9126C21.7266 27.6944 21.2771 27.5815 20.7814 27.5815C19.9914 27.5815 19.483 27.9657 19.483 28.5946C19.483 29.1106 19.8615 29.4288 20.5589 29.5281L20.8792 29.5743C21.251 29.6274 21.4265 29.7266 21.4265 29.9055C21.4265 30.1502 21.1786 30.2896 20.7157 30.2896C20.246 30.2896 19.9071 30.1373 19.6786 29.9585L19.359 30.4942C19.7309 30.7723 20.2005 30.9049 20.709 30.9049C21.6094 30.9049 22.1313 30.4745 22.1313 29.8721C22.1313 29.3159 21.7206 29.025 21.042 28.9257L20.7224 28.8787C20.429 28.8393 20.1938 28.7802 20.1938 28.5681C20.1938 28.3362 20.4155 28.1975 20.7873 28.1975C21.1853 28.1975 21.5706 28.3498 21.7595 28.4688L22.0529 27.9126ZM30.8004 27.5815C30.4092 27.5815 30.1546 27.7671 29.9791 28.0452V27.661H29.3071V30.8254H29.9851V29.0515C29.9851 28.5279 30.2068 28.2369 30.6503 28.2369C30.7877 28.2369 30.931 28.2566 31.0744 28.3165L31.2835 27.6679C31.1334 27.608 30.9378 27.5815 30.8004 27.5815ZM25.0148 27.661H23.906V26.701H23.2206V27.661H22.5882V28.29H23.2206V29.7335C23.2206 30.4677 23.5013 30.9049 24.3032 30.9049C24.5974 30.9049 24.9364 30.8125 25.1514 30.6602L24.9558 30.0707C24.7534 30.1896 24.5317 30.2495 24.3555 30.2495C24.0165 30.2495 23.906 30.0373 23.906 29.7198V28.29H25.0148V27.661ZM14.8778 30.8254V28.8393C14.8778 28.0914 14.4082 27.5883 13.6511 27.5815C13.2531 27.5747 12.8425 27.7004 12.555 28.1445C12.34 27.7937 12.001 27.5815 11.5247 27.5815C11.1917 27.5815 10.8661 27.6807 10.6115 28.0513V27.661H9.93286V30.8254H10.6175V29.0712C10.6175 28.5218 10.9177 28.2301 11.3813 28.2301C11.8315 28.2301 12.0593 28.5279 12.0593 29.0644V30.8254H12.7447V29.0712C12.7447 28.5218 13.0575 28.2301 13.5077 28.2301C13.9706 28.2301 14.1924 28.5279 14.1924 29.0644V30.8254H14.8778Z"
+                    fill="#231F20"
+                  ></path>
+                  <path
+                    d="M45.6299 20.302V19.8398H45.5112L45.3738 20.1573L45.2372 19.8398H45.1177V20.302H45.2021V19.9534L45.3305 20.2543H45.4179L45.5463 19.9527V20.302H45.6299ZM44.8766 20.302V19.9186H45.0289V19.8405H44.6406V19.9186H44.7929V20.302H44.8766Z"
+                    fill="#F79410"
+                  ></path>
+                  <path
+                    d="M32.1308 22.2901H21.856V3.5498H32.1308V22.2901Z"
+                    fill="#FF5F00"
+                  ></path>
+                  <path
+                    d="M22.5145 12.9185C22.5145 9.1169 24.2683 5.73057 26.9995 3.54829C25.0022 1.95249 22.4816 1.00002 19.7422 1.00002C13.257 1.00002 8 6.336 8 12.9185C8 19.5009 13.257 24.8369 19.7422 24.8369C22.4816 24.8369 25.0022 23.8844 26.9995 22.2886C24.2683 20.1064 22.5145 16.72 22.5145 12.9185Z"
+                    fill="#EB001B"
+                  ></path>
+                  <path
+                    d="M45.9882 12.9185C45.9882 19.5009 40.7312 24.8369 34.246 24.8369C31.5066 24.8369 28.986 23.8844 26.988 22.2886C29.72 20.1064 31.4738 16.72 31.4738 12.9185C31.4738 9.1169 29.72 5.73057 26.988 3.54829C28.986 1.95249 31.5066 1.00002 34.246 1.00002C40.7312 1.00002 45.9882 6.336 45.9882 12.9185Z"
+                    fill="#F79E1B"
+                  ></path>
+                </svg>
+                <svg width="54" height="32" viewBox="0 0 54 32" fill="none">
+                  <path
+                    d="M28.307 12.777c-.026 2.08 1.884 3.242 3.324 3.933 1.479.708 1.976 1.162 1.97 1.796-.011.97-1.18 1.398-2.273 1.414-1.909.03-3.018-.507-3.9-.913l-.687 3.167c.885.401 2.523.751 4.222.766 3.989 0 6.598-1.938 6.612-4.943.016-3.813-5.358-4.024-5.322-5.729.013-.517.514-1.068 1.612-1.209.543-.07 2.044-.124 3.744.647l.668-3.064C37.362 8.314 36.187 8 34.723 8c-3.754 0-6.395 1.965-6.416 4.777zm16.384-4.513c-.728 0-1.342.418-1.616 1.06l-5.697 13.391h3.986l.793-2.157h4.87l.46 2.157H51l-3.065-14.45H44.69zm.558 3.904l1.15 5.427h-3.15l2-5.427zM23.475 8.264l-3.142 14.451h3.798l3.14-14.45h-3.796zm-5.619 0L13.903 18.1l-1.599-8.363c-.188-.934-.928-1.473-1.751-1.473H4.09l-.09.42c1.327.283 2.834.74 3.747 1.23.559.298.718.56.902 1.27l3.029 11.531h4.013l6.154-14.45h-3.989z"
+                    fill="url(#prefix__paint0_linear_visa)"
+                  ></path>
+                  <defs>
+                    <linearGradient
+                      id="prefix__paint0_linear_visa"
+                      x1="25.608"
+                      y1="23.24"
+                      x2="26.034"
+                      y2="7.896"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#222357"></stop>
+                      <stop offset="1" stop-color="#254AA5"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="col mt-3 d-flex justify-content-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.979223122432!2d-6.350946746478212!3d38.92492725777077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1426eecf50afe1%3A0x93d6b7ff6832cc56!2sC%20E%20I%20P%20Miguel%20de%20Cervantes!5e0!3m2!1ses!2ses!4v1677515877649!5m2!1ses!2ses"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="row familia">
+            <div
+              class="col text-center d-flex align-items-center justify-content-center"
+            >
+              <p>Abiertos de Lunes a Sabado de 8:00 a 20:00</p>
+            </div>
+            <div
+              class="col text-center bordes-lados d-flex align-items-center justify-content-center"
+            >
+              <p>Tlf contacto: +45-719-788-236</p>
+            </div>
+            <div
+              class="col text-center d-flex align-items-center justify-content-center"
+            >
+              <p>Dirección: C. Medea, s/n, 06800 Mérida, Badajoz</p>
+            </div>
+          </div>
+          <div class="row mt-4 copyright-top">
+            <div class="col">
+              <p>
+                © AtopeExtremadura 2023. Todos los derechos reservados. Se
+                prohíbe cualquier reproducción, distribución, comunicación
+                pública o transformación total o parcial de los contenidos de
+                esta página web sin la autorización expresa y por escrito del
+                titular de los derechos de autor. La utilización no autorizada
+                de los contenidos de esta página web puede constituir una
+                infracción de los derechos de propiedad intelectual y dar lugar
+                a acciones legales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../../javascript/java.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+      const myModal = new bootstrap.Modal(
+        document.getElementById("modalId"),
+        options
+      );
+    </script>
+  </body>
+</html>

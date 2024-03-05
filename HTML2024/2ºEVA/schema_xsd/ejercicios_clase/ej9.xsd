@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="respuesta" type="patr">
+    </xs:element>
+    <xs:simpleType name="patr">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A"></xs:enumeration>
+            <xs:enumeration value="B"></xs:enumeration>
+            <xs:enumeration value="C"></xs:enumeration>
+            <xs:enumeration value="D"></xs:enumeration> 
+            <xs:enumeration value="E"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

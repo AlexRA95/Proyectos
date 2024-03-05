@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    height: 3rem;
+}
+
+ul, li{
+    list-style: none;
+    display: inline-block;
+}
+
+li{
+    margin-bottom: 1rem;
+    background-color: red;
+    padding: 1rem;
+}
+
+img{
+    margin: 0;
+}
+
+#header{
+    box-shadow: 5px 5px 5px 5px #000;
+}

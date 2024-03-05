@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+
+}
+
+header, footer{
+    background-color: rgb(255, 101, 46);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+main aside, main nav{
+    flex: 50%;
+    margin: 0 1rem;
+}
+
+main aside{
+    color: #fff;
+    margin: 0 1rem;
+}
+
+main nav h3{
+    color: #fff;
+}
+
+main nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+main nav li{
+    list-style: none;
+    border-bottom: 0.3rem #fff solid;
+    color: orangered;
+    padding: 0.5rem;
+}
+
+main nav li:hover{
+    background-color: rgb(255, 101, 46);
+    color: #fff;
+    cursor: pointer;
+}
+
+main section article{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+main section article header, main section article footer{
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0;
+}
+
+main section article main{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personas SYSTEM "personas.dtd">
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="personas.xsd">
+    <persona idpersona="DS-33">
+        <nombre>Paca</nombre>
+        <apellido>Ortega</apellido>
+        <edad>33</edad>
+        <dni>09.214.328-E</dni>
+        <email>acb@hotmail.com</email>
+        <telefono>608677125</telefono>
+        <direccion>C/San Manuel, 15</direccion>
+        <jefe idjefe="BA-01"/>
+        <caracteristicas>
+            <idioma nivel="B2">Inglés</idioma>
+            <lenguajeprogramacion>Java</lenguajeprogramacion>
+        </caracteristicas>
+    </persona>
+
+    <persona idpersona="BA-01">
+        <nombre>Paca</nombre>
+        <apellido>Ortega</apellido>
+        <apellido>Lara</apellido>
+        <edad>33</edad>
+        <dni>09.214.328-E</dni>
+        <email>acb@hotmail.com</email>
+        <telefono>608677125</telefono>
+        <direccion>C/San Manuel, 15</direccion>
+        <caracteristicas>
+            <lenguajeprogramacion>Java</lenguajeprogramacion>
+            <idioma nivel="A1">Frances</idioma>
+            <lenguajeprogramacion>Python</lenguajeprogramacion>
+        </caracteristicas>
+    </persona>
+
+    <persona idpersona="MM-00">
+        <nombre>Paca</nombre>
+        <apellido>Ortega</apellido>
+        <dni>09.214.328-E</dni>
+        <email>acb@hotmail.com</email>
+        <telefono>608677125</telefono>
+        <direccion>C/San Manuel, 15</direccion>
+    </persona>
+</personas>

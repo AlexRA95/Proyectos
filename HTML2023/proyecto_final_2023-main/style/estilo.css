@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: #276615;
+}
+
+.navbar-bordertop{
+    border-top: 0.1rem solid #9F9F9F;
+}
+
+.logo{
+    width: 15%;
+}
+
+
+.modal-background{
+    background-color: #9F9F9F;
+}
+
+
+.select-width{
+    width: 55%;
+}
+
+.cajas{
+    background-color: #276615;
+    border-left: 0.1rem solid #9F9F9F;
+    padding: 1rem;
+    font-size: large;
+    text-align: center;
+}
+
+.bordes-lados{
+    border-right: 0.1rem solid #9F9F9F;
+    border-left: 0.1rem solid #9F9F9F;
+
+}
+
+.familia{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.newsletter-input{
+    width: 50%;
+}
+
+.footer{
+    background-color: #276615;
+}
+
+.copyright-top{
+    border-top: 0.1rem solid #9F9F9F;
+}
+
+.link-claro{
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: 0.5rem;
+}
+
+.enlace-blanco{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.footer-middle{
+    border-right: 0.1rem solid #9F9F9F;
+    border-left: 0.1rem solid #9F9F9F;
+}
+
+.comentario-1{
+    border-bottom: 0.1rem solid #9F9F9F;
+    
+}
+
+.user-img{
+    width: 7%;
+}
+
+
+
+.fondo-caja-1, .fondo-caja-2{
+    
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    width: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondo-caja-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/side-card-1.jpg);
+}
+
+.fondo-caja-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/side-card-2.jpg);
+}
+
+
+.fondo-descrip{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/dehesa-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    
+
+    color: aliceblue;
+    font-size: 1.2rem;
+    
+}
+
+.fondo-oferta{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/aceite-oferta.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.fondo-tags{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/tags.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.icono-cat{
+    width: 2rem;
+}
+
+
+@media (max-width: 767.98px){
+
+    .select-width{
+        width: 100%;
+    }
+
+    .cajas{
+        border-left: 0;
+        border-bottom: 0.1rem solid #9F9F9F;
+        text-align: center;
+    }
+
+    .user-img{
+        width: 12%;
+    }
+    
+    .filtro{
+        border: none;
+    }
+
+}
+
+@media (max-width: 992px ) {
+    
+    .footer-middle, .footer-middle2{
+        border-top: 1px solid #9F9F9F;
+        border-bottom: 1px solid #9F9F9F;
+        border-left: none;
+        border-right: none;
+        padding: 1rem 0;
+    }
+
+
+}
+
+
+
+@media (min-width: 767.99px){
+    .logo{
+        width: 8%;
+    }
+    
+
+    
+}
+
+
+#form {
+    width: 15.625rem;
+    margin: 0 auto;
+    height: 3.125rem;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 1.25rem;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }

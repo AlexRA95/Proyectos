@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--Cabecera-->
+  <head>
+    <title>Web 2023</title>
+    <meta name="keywords" content="web,desarrollo,ciclo,smr" />
+    <meta name="description" content="Desarrollo Web" />
+    <meta name="author" content="Alejandro" />
+    <link rel="stylesheet" type="text/css" href="style/estilo.css" />
+
+  </head>
+
+  <!--Cuerpo-->
+  <body>
+    <section id="carcasa" class="container">
+        <div class="box_up">
+            <span class="camara"></span>
+            <span class="circles"></span>
+            <span class="audio"></span>
+        </div>
+        <div class="screen">
+            <img class="logo" src="img/tierra.jpg" alt="">
+            <span class="text">Hola, Mundo!</span>
+        </div>
+        <div class="buttons_down">
+            <span class="btn_home"></span>
+        </div>
+    </section>
+
+    <div id="container2">
+        <button id="btnAmarillo" class="btn">Amarillo</button>
+        <button id="btnAzul" class="btn">Azul</button>
+        <button id="btnRojo" class="btn">Rojo</button>
+    </div>
+    <script>
+        document.getElementById("btnAmarillo").onclick = function() {
+            document.getElementById("carcasa").style.backgroundColor = "#fcf3cf";
+        }
+        document.getElementById("btnAzul").onclick = function() {
+            document.getElementById("carcasa").style.backgroundColor = "blue";
+        }
+        document.getElementById("btnRojo").onclick = function() {
+            document.getElementById("carcasa").style.backgroundColor = "red";
+        }
+    </script>
+
+  </body>
+</html>

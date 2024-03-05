@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuento SYSTEM "cuento3.dtd">
+<cuento cod="L11" titulo="La Cenicienta" genero="infantil" moneda="dol">
+    <personajes>
+        <personaje id="CEN" tipo="principal">
+            <nombre>Ceninicenta</nombre>
+            <genero>F</genero>
+            <descripcion>Una joven trabajadora y bondadosa</descripcion>
+        </personaje>
+        <personaje id="MAD" tipo="antagonista">
+            <nombre>Madrastra</nombre>
+            <genero>F</genero>
+            <imagen>https://informatica.iesalbarregas.com/pluginfile.php/1/theme_moove/logo/1697821574/Copia%20de%20Copia%20de%20Logo%20Acueducto%20lowres%20azul.jpg</imagen>
+        </personaje>
+        <personaje id="PRI" tipo="secundario">
+            <nombre>Principe</nombre>
+            <genero>M</genero>
+            <url>https://informatica.iesalbarregas.com/my/courses.php</url>
+        </personaje>
+    </personajes>
+    <trama>Cenicienta, una joven desfavorecida, transforma su suerte con la ayuda de su hada madrina
+        y un zapato de cristal para conquistar el corazón del príncipe.</trama>
+    <etiqueta nombre="amor"/>
+    <etiqueta nombre="superacion"/>
+</cuento>

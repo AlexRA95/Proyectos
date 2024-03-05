@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000;
+    padding: 0.75rem;
+}
+
+header span{
+    color: #fff;
+    font-size: 2rem;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+section img{
+    height: 350px;
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+}
+
+section div{
+    padding: 10px;
+}
+
+section div h4{
+    padding: 10px 0;
+    text-align: center;
+}
+
+section div div{
+    text-align: justify;
+}
+
+section #one{
+    background-color: greenyellow;
+}
+
+section #two{
+    background-color: green;
+}
+
+section #three{
+    background-color: goldenrod;
+}

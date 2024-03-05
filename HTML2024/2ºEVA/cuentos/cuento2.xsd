@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cuento">
+        <xs:complexType>
+                <xs:group ref="inCuento"></xs:group>
+            <xs:attributeGroup ref="cuentoAtt">
+            </xs:attributeGroup>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- Grupos elementos-->
+    <xs:group name="inCuento">
+        <xs:sequence>
+            <xs:element name="personajes">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="personaje" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:group ref="inPerso"></xs:group>
+                                <xs:attributeGroup ref="persoAtt"></xs:attributeGroup>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="trama" type="xs:string"></xs:element>
+            <xs:element name="etiqueta" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="inPerso">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+            <xs:element name="genero" type="generos"></xs:element>
+            <xs:element name="descripcion" minOccurs="0" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:simpleType name="generos">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="M"></xs:enumeration>
+            <xs:enumeration value="F"></xs:enumeration>
+            <xs:enumeration value="N"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!-- Grupos atributos-->
+    <xs:attributeGroup name="cuentoAtt">
+        <xs:attribute name="cod" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:ID">
+                    <xs:pattern value="[A-Z]{1}[0-9]{2}"></xs:pattern>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="titulo" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="genero" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="infantil"></xs:enumeration>
+                    <xs:enumeration value="fantasia"></xs:enumeration>
+                    <xs:enumeration value="terror"></xs:enumeration>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+
+    <xs:attributeGroup name="persoAtt">
+        <xs:attribute name="id" type="xs:ID" use="required"></xs:attribute>
+        <xs:attribute name="tipo" default="principal">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="principal"></xs:enumeration>
+                    <xs:enumeration value="secundario"></xs:enumeration>
+                    <xs:enumeration value="antagonista"></xs:enumeration>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+
+
+
+
+</xs:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cuento cod="L22" titulo="La Mansión Encantada" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cuento2.xsd">
+    <personajes>
+        <personaje id="EMM" tipo="principal">
+            <nombre>Emma</nombre>
+            <genero>F</genero>
+        </personaje>
+        <personaje id="SRJ" tipo="secundario">
+            <nombre>Señor Jenkins</nombre>
+            <genero>M</genero>
+            <descripcion>Dueño de la mansión</descripcion>
+        </personaje>
+        <personaje id="ESP" tipo="antagonista">
+            <nombre>Espectro</nombre>
+            <genero>N</genero>
+        </personaje>
+    </personajes>
+    <trama>En una noche oscura, Emma se aventuró a explorar la misteriosa mansión del señor Jenkins... </trama>
+</cuento>

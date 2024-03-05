@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">    
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="emisor">
+                    <xs:complexType>
+                        <xs:group ref="data"></xs:group>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="cliente">
+                    <xs:complexType>
+                        <xs:group ref="data"></xs:group>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="detalle">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="linea" maxOccurs="15" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:group ref="eleLinea"></xs:group>
+                                    <xs:attributeGroup ref="attLinea"></xs:attributeGroup>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="importe" type="tipoPrecio" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+            <xs:attributeGroup ref="attFactura"></xs:attributeGroup>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attributeGroup name="attFactura">
+        <xs:attribute name="numero" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="1"></xs:minInclusive>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="fecha" type="xs:date" use="required"></xs:attribute>
+        <xs:attribute name="moneda" type="xs:string" fixed="Euro"></xs:attribute>
+    </xs:attributeGroup>
+
+    <xs:group name="data">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoTexto"></xs:element>
+            <xs:element name="cif">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[0-9]{8}[-]{1}[A-Z]"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="telefono">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:pattern value="[0-9]{9}"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:simpleType name="tipoTexto">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5"></xs:minLength>
+            <xs:maxLength value="20"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPrecio">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"></xs:minExclusive>
+            <xs:maxExclusive value="999"></xs:maxExclusive>
+            <xs:totalDigits value="5"></xs:totalDigits>
+            <xs:fractionDigits value="2"></xs:fractionDigits>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:attributeGroup name="attLinea">
+        <xs:attribute name="codigo" type="xs:ID" use="required"></xs:attribute>
+        <xs:attribute name="tipo" use="optional" type="tipoArticulo"></xs:attribute>
+    </xs:attributeGroup>
+
+    <xs:simpleType name="tipoArticulo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Libro"></xs:enumeration>
+            <xs:enumeration value="DVD"></xs:enumeration>
+            <xs:enumeration value="Varios"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:group name="eleLinea">
+        <xs:sequence>
+            <xs:element name="descripcion"></xs:element>
+            <xs:element name="cantidad">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minExclusive value="0"></xs:minExclusive>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="oferta" minOccurs="0" maxOccurs="1"></xs:element>
+            <xs:element name="pvp" type="tipoPrecio"></xs:element>
+        </xs:sequence>
+    </xs:group>
+
+
+</xs:schema>

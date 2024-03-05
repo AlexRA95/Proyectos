@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Cabecera-->
+    <head>
+        <title>Formulario I</title>
+        <meta name="keywords" content="formulario"/>
+        <meta name="description" content="formulario"/>
+        <meta name="author" content="Alejandro"/>
+    </head>
+
+    <!--Cuerpo-->
+    <body>
+<form action="">
+<fieldset>
+    <legend>Datos personales</legend>
+    <table>
+        <tr>
+            <td><label for="nombre">Nombre</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nombre" size="50"></td>
+        </tr>
+        <tr>
+            <td><label for="apellidos">Apellidos</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="apellidos" size="50"></td>
+        </tr>
+        <tr>
+            <td><label for="DNI">DNI</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="DNI" size="50"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+        </tr>
+        <tr>
+            <td><input type="email" name="email" size="50"></td>
+        </tr>
+        <tr>
+            <td><label for="telefono">Telefono de contacto</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="telefono" size="50" maxlength="9"></td>
+        </tr>
+        
+    </table>
+
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Datos de reserva</legend>
+    <table>
+        <tr>
+            <td><label for="fecha">Seleccione fecha</label></td>
+        </tr>
+        <tr>
+            <td><input type="date" name="fecha"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="menu">Seleccione el menú que desee</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="menu">
+                    <option value="" checked> Elija el menú </option>
+                    <option value="algo">Algo</option>
+                    <option value="otro">Otro</option>
+                    <option value="mas">Más</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="comensal">Seleccione el número de comensales</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="comensal">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <h3><label for="salon">Elija el salón</label></h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <table>
+                <tr>
+                    <td>
+                        Salón Japonés
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="salon" value="japones">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Salón Isabelino
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="salon" value="isabelino">
+                    </td>
+                </tr>
+               </table>
+            </td>
+        </tr>
+        <tr>
+            <td><h3><label for="suplemento">Elija los suplementos</label></h3></td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Bebida</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="suplemento" value="bebida"></td>
+                    </tr>
+                    <tr>
+                        <td>Pan</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="suplemento" value="pan"></td>
+                    </tr>
+                    <tr>
+                        <td>Postre</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="suplemento" value="postre"></td>
+                    </tr>
+                    <tr>
+                        <td>Reservado</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="suplemento" value="reservado"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+
+</fieldset>
+<br>
+    <button type="reset" >Borrar datos del formulario</button>
+    <br>
+    <br>
+    <button type="submit">Hacer reserva</button>
+
+</form>
+    </body>
+</html>

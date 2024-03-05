@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verde{
+
+    margin-top: 2rem;
+    padding: 10rem;
+    background-color: green;
+
+}
+
+.azul{
+
+    padding: 5rem;
+    background-color: blue;
+
+}

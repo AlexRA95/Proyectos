@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivales</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="estilo/taquilla.css">
+</head>
+
+<body>
+    <!--Header y navbar-->
+    <header>
+        <h1>FESTIVALES DE VERANO</h1>
+    </header>
+
+    <nav>
+        <div class="box"><a href="festivales.html">Página principal</a></div>
+        <div class="box"><a href="legal.html">Legal</a></div>
+        <div class="box"><a href="calendario.html">Calendario</a></div>
+    </nav>
+    <!--Main-->
+    <main>
+
+        <div class="cajaprecio">
+            <div class="fila1 filagen">
+                <p class="espaciado">Etiqueta</p>
+                <p>Precio</p>
+            </div>
+            <div class="fila2 filagen">
+                <p class="espaciado">Entrada de día</p>
+                <p>60€</p>
+            </div>
+            <div class="fila3 filagen">
+                <p class="espaciado">Abono</p>
+                <p>120€</p>
+            </div>
+            <div class="fila4 filagen">
+                <p class="espaciado">Zona de Acampada</p>
+                <p> </p>
+            </div>
+            <div class="fila5 filagen">
+                <p class="espaciado">Tienda/día</p>
+                <p>25€</p>
+            </div>
+            <div class="fila6 filagen">
+                <p class="espaciado">Persona/día</p>
+                <p>15€</p>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <form action="" method="post">
+                <div class="formizq">
+
+
+                    <div class="labels">
+                        <label for="name">Nombre:</label>
+                        <label for="email">Email: </label>
+                        <label for="dni">DNI: </label>
+                        <label for="festival">Festival: </label>
+                        
+                    </div>
+                    <div class="inputs">
+                        <input type="text" pattern="[a-zA-Z]{1,10}" id="name" name="name" class="formtama" required >
+                        <input type="email" name="email" id="email" class="formtama"    placeholder="usuario@ejemplo.com" required/>
+                        <input type="text" pattern="[0-9]{8}[a-zA-Z]{1}" name="dni" id="dni" class="formtama" required>
+                        <select name="festival" id="festival" class="formtama">
+                            <option value=""></option>
+                            <option value="op1">Junio</option>
+                            <option value="op2">VIDA FESTIVAL</option>
+                            <option value="op3">Festiva otro</option>
+                            <option value="op4">Festival otro</option>
+                            <option value="op4">Festival otro</option>
+                            <option value="op5">Festival otro</option>
+                            <option value="op6">Festival otro</option>
+                            <option value="op7">Festival otro</option>
+                            <option value="op8">Festival otro</option>
+                            <option value="op9">Festival otro</option>
+                            <option value="op10">Festival otro</option>
+                            <option value="op11">Festival otro</option>
+                            <option value="op12">Festival otro</option>
+                            <option value="op13">Festival otro</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="formder">
+
+                    <fieldset>
+
+                        <legend>Tipo de Entrada</legend>
+
+                        <div><input type="radio" name="dia" id="dia">
+                        <label for="dia">Entrada de día</label></div>
+
+                        <div><input type="radio" name="dia" id="abono" >
+                        <label for="abono">Abono Festival</label></div>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Reserva Zona de Acampada</legend>
+
+                        <div class="inicioform">
+                            <label for="inicio">Fecha Inicio: </label>
+                            <input type="date" name="inicio" id="inicio">
+                        </div>
+
+                        <div class="finform">
+                            <label for="inicio">Fecha Fin: </label>
+                            <input type="date" name="inicio" id="inicio">
+                        </div>
+                        
+
+                    </fieldset>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="compra">
+                        <label for="compra">Acepto condiciones de compra</label>
+                    </div>
+
+                    <button>Enviar</button>
+
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+
+        <div class="cajon">
+            <div class="icon">
+                <i class="fa-regular fa-map"></i>
+            </div>
+            <div class="text">
+                <h3>Localización</h3>
+                <p>Descubre nuestra ubicación y donde llegar a nustras instalaciones.</p>
+            </div>
+
+        </div>
+
+        <div class="cajon">
+            <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="text">
+                <h3>Contacto</h3>
+                <p>Ponte en contacto con nosotros a través de nuestro correo electronico.</p>
+            </div>
+        </div>
+
+        <div class="cajon">
+            <div class="icon">
+                <i class="fa-solid fa-shield"></i>
+            </div>
+            <div class="text">
+                <h3>Politica de Privacidad</h3>
+                <p>Lee nuestras politicas de privacidad para proteger tus datos personales.</p>
+            </div>
+        </div>
+
+        <div class="cajon">
+            <div class="icon">
+                <i class="fa-solid fa-handshake-simple"></i>
+            </div>
+            <div class="text">
+                <h3>Compromiso Ético</h3>
+                <p>Conoce nuestro compromiso ético y valores como empresa.</p>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

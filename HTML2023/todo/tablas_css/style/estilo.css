@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+table caption {
+    background-color: #f9e1f7;
+    color: #b40285;
+    padding: 5pt;
+}
+
+table thead {
+    background-color: #02dfa5;
+}
+
+table thead tr td {
+    border: 3px solid #163a0a;
+    padding: 10pt;
+}
+
+table tbody {
+    color: #fe8511;
+}
+
+table tbody tr td {
+    border: 1px solid #fff;
+    padding: 14pt 20pt;
+    font-size: 1rem !important;
+}
+
+table tfoot {
+    background-color: #08088a;
+    color: #f57c0a;
+}
+
+.one {
+    background-color: #f3e2a9;
+}
+
+.two {
+    background-color: #a9f5f2;
+}

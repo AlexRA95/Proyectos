@@ -1,0 +1,17 @@
+<!ELEMENT personas (persona)+>
+<!ELEMENT persona (nombre, apellido, apellido?, edad?, dni,((telefono,email?)|(email,telefono?)), direccion, jefe?, caracteristicas?)>
+<!ATTLIST persona idPersona ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT jefe (#PCDATA)>
+<!ATTLIST jefe idJefe IDREF #REQUIRED>
+<!ELEMENT caracteristicas (idioma|lenguajeProgramacion)+>
+<!ELEMENT idioma (#PCDATA)>
+<!ATTLIST idioma nivel (A1|A2|B1|B2|C1|C2) #IMPLIED>
+<!ELEMENT lenguajeProgramacion (#PCDATA)>
+<!ATTLIST lenguajeProgramacion nivel (A1|A2|B1|B2|C1|C2) #IMPLIED>

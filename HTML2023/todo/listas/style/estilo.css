@@ -1,0 +1,7 @@
+ul{
+    list-style-position: inside;
+}
+
+li{
+    background-color: lightblue;
+}

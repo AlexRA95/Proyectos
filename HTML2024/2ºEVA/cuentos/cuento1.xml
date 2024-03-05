@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuento SYSTEM "cuento1.dtd">
+<cuento cod="L11" titulo="La Cenicienta" genero="infantil">
+    <personajes>
+        <personaje id="CEN" tipo="principal">
+            <nombre>Ceninicenta</nombre>
+            <genero>F</genero>
+            <descripcion>Una joven trabajadora y bondadosa</descripcion>
+        </personaje>
+        <personaje id="MAD" tipo="antagonista">
+            <nombre>Madrastra</nombre>
+            <genero>F</genero>
+        </personaje>
+        <personaje id="PRI" tipo="secundario">
+            <nombre>Principe</nombre>
+            <genero>M</genero>
+        </personaje>
+    </personajes>
+    <trama>Cenicienta, una joven desfavorecida, transforma su suerte con la ayuda de su hada madrina
+        y un zapato de cristal para conquistar el corazón del príncipe.</trama>
+    <etiqueta nombre="amor"/>
+    <etiqueta nombre="superacion"/>
+</cuento>

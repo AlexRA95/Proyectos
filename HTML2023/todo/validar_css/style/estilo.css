@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+form{
+    width: 350px;
+    background-color: #ccc;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+}
+form label{
+    font-weight: bold;
+    width: 80px;
+    display: inline-block;
+    margin: 10px;
+}
+
+form input{
+    padding: 5px 5px;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+form textarea{
+    margin-left: 10px;
+    background-color: blanchedalmond;
+    resize: none;
+    display: block;
+}
+
+#boton{
+    background-color: #000;
+    color: #fff;
+    margin-top: 30px;
+    width: 100%;
+    display: block;
+}
+
+#boton:hover{
+    cursor: pointer;
+    background-color: yellow;
+    color: #000;
+}
+
+form input:invalid{
+    background-color: red;
+    border: 2px dotted red;
+}
+
+form input:valid{
+    background-color: green;
+    border: 2px dotted green;
+}
+
+form input:required{
+    background-color: grey;
+}

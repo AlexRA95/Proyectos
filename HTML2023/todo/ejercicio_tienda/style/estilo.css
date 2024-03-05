@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #FD9846;
+}
+
+header .fa-cube{
+    font-size: 3rem;
+}
+
+nav{
+    background-color: orangered;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+
+    list-style: none;
+
+}
+
+nav ul li{
+    padding: 0.7rem;
+    color: #fff;
+}
+
+nav ul li:hover{
+    border-bottom: 0.3rem solid #fff;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+
+section #compra{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+section #compra div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0.8rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: solid black 1px;
+}
+
+section article img{
+    height: 300px;
+    width: 100%;
+    padding: 7px 0;
+}
+
+section article div img{
+    height: 200px;
+    width: 200px;
+}
+
+.fa-shopping-cart{
+    color: orange;
+}
+
+section #logo{
+    display: flex;
+    justify-content: center;
+}
+
+section #logo i{
+    padding: 0px 10px;
+    border-radius: 10rem;
+    padding: 0.5rem;
+    margin: 10px;
+    color: #fff;
+}
+
+.fa-facebook{
+    background-color: blue;
+}
+
+.fa-blogger-b{
+    background-color: yellow;
+}
+
+.fa-google-plus{
+    background-color: lightcoral;
+}
+
+.fa-whatsapp{
+    background-color: greenyellow;
+}
+
+.fa-twitter{
+    background-color: aquamarine;
+}
+
+.fa-youtube{
+    background-color: red;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    
+    border-top: burlywood 5px solid;
+
+    background-color: antiquewhite;
+    color: rgb(131, 130, 130);
+}
+
+footer div h3{
+    padding: 1rem;
+}
+
+footer div p{
+    padding: 0.29rem;
+}

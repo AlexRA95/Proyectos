@@ -1,0 +1,14 @@
+<!ELEMENT cuento (personajes,trama,etiqueta*)>
+    <!ATTLIST cuento cod ID #REQUIRED> <!-- Tiene que ser 1 letra y 2 numeros-->
+    <!ATTLIST cuento titulo CDATA #REQUIRED>
+    <!ATTLIST cuento genero (infantil|fantasia|terror) #IMPLIED>
+<!ELEMENT personajes (personaje+)>
+<!ELEMENT personaje (nombre,genero,descripcion?)>
+    <!ATTLIST personaje id ID #REQUIRED>
+    <!ATTLIST personaje tipo (principal |secundario |antagonista ) "principal"> 
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (#PCDATA)> <!-- Solo puede ser M, F o N-->
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT trama (#PCDATA)>
+<!ELEMENT etiqueta EMPTY>
+    <!ATTLIST etiqueta nombre CDATA #REQUIRED>

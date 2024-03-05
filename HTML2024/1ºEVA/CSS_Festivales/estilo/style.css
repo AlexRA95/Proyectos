@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+
+}
+
+header {
+
+
+    background: linear-gradient(orange 4rem, aqua);
+
+
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Monoton';
+
+}
+
+header h1 {
+
+    font-weight: normal;
+
+
+}
+
+
+nav {
+
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+nav .box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.box a {
+
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.3s linear;
+}
+
+.box a:hover {
+
+    font-size: 1.5rem;
+
+}
+
+
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(4, 4, 4, 0.749);
+
+}
+
+footer .cajon {
+
+    display: flex;
+    justify-content: center;
+    border-right: 0.2rem solid grey;
+    color: white;
+
+
+}
+
+footer .cajon .icon {
+
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+}
+
+footer .cajon .text {
+
+    margin-right: 1rem;
+
+}
+
+footer .cajon:last-child {
+
+    border: none;
+
+}
+

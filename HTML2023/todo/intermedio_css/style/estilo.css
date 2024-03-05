@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#titulo{
+    background-color: grey;
+    color: white;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+#one{
+    font-size: 11pt;
+    display: inline-block;
+    margin-top: 10pt;
+    margin-bottom: 20pt;
+}
+
+
+#html{
+    float: left;
+    margin-right: 10pt;
+}
+
+#html img{
+    height: 125pt;
+}
+
+#texto{
+    text-align: justify;
+    font-size: 11pt;
+}
+
+
+#two{
+    display: inline-block;
+    font-size: 11pt;
+    margin-top: 10pt;
+    margin-bottom: 20pt;
+}
+
+#css{
+    float: left;
+    margin-right: 10pt;
+}
+
+#css img{
+    height: 125pt;
+}
+
+.rojo{
+    color: red;
+}
+
+.negro{
+    font-weight: bolder;
+    background-color: white;
+}
+

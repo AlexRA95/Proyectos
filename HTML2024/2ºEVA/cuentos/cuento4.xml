@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cuento cod="L22" titulo="La Mansión Encantada" precio="9.99" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cuento4.xsd" >
+    <personajes>
+        <personaje id="EMM" tipo="principal">
+            <nombre>Emma</nombre>
+            <genero>F</genero>
+            <imagen>https://informatica.iesalbarregas.com/pluginfile.php/1/theme_moove/logo/1697821574/Copia%20de%20Copia%20de%20Logo%20Acueducto%20lowres%20azul.jpg</imagen>
+        </personaje>
+        <personaje id="SRJ" tipo="secundario">
+            <nombre>Señor Jenkins</nombre>
+            <genero>M</genero>
+            <descripcion>Dueño de la mansión</descripcion>
+        </personaje>
+        <personaje id="ESP" tipo="antagonista">
+            <nombre>Espectro</nombre>
+            <genero>N</genero>
+            <url>https://informatica.iesalbarregas.com/my/courses.php</url>
+        </personaje>
+    </personajes>
+    <trama>En una noche oscura, Emma se aventuró a explorar la misteriosa mansión del señor Jenkins... </trama>
+</cuento>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE facturas SYSTEM "factura.dtd">
+
+<facturas 
+xmlns:e="http://alex.org/emisor"
+xmlns:c="http://alex.org/cliente">
+    <factura numero="27" fecha="2024-01-20">
+        <datos_emisor>
+            <e:nombre>Librería Pérez</e:nombre>
+            <e:cif> 44555666B</e:cif>
+            <e:telefono>777888999</e:telefono>
+        </datos_emisor>
+        <datos_cliente>
+            <c:nombre>Biblioteca Mérida</c:nombre>
+            <c:cif>33111222A</c:cif>
+            <c:telefono>333999444</c:telefono>
+        </datos_cliente>
+        <detalle_factura importe="85">
+            <articulo codigo_articulo="AW7" tipo="Libro">
+                <descripcion>Analítica Web 2.0</descripcion>
+                <cantidad>1</cantidad>
+                <oferta/>
+                <pvp>25</pvp>
+            </articulo>
+            <articulo codigo_articulo="CP5" tipo="DVD">
+                <descripcion>Curso de HTML</descripcion>
+                <cantidad>2</cantidad>
+                <pvp>30</pvp>
+            </articulo>
+        </detalle_factura>
+    </factura>
+</facturas>

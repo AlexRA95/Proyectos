@@ -1,0 +1,70 @@
+aside{
+
+    margin-right: 1rem;
+    padding: 1rem;
+    border-right: 1px solid grey;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+
+aside a{
+
+    color: grey;
+    text-decoration: none;
+    padding: 0.5rem 0;
+
+}
+
+article{
+    
+    border-radius: 5px;
+    
+    
+    width: 80%;
+    max-height: 24rem !important;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+    
+    
+
+}
+
+article::-webkit-scrollbar{
+
+    display: none;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+}
+
+article h3{
+
+    text-align: center;
+    
+
+}
+
+article h3, article p, article h4{
+    margin: 1rem 0;
+}
+
+

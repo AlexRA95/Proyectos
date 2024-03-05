@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 20px 0;
+}
+
+li {
+    padding-left: 10px;
+}
+
+p {
+    position: sticky;
+    top: 0px;
+    background-color: #e1f4fc;
+    padding: 20px;
+    font-weight: bold;
+}

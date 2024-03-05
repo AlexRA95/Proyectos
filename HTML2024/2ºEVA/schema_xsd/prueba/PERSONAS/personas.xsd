@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation>
+            <titulo>Solución XSD Personas</titulo>
+            <modulo>Lenguajes de Marcas y Sistemas de Gestión
+            de la Información</modulo>
+            <fecha>2022-02-28</fecha>
+            <autor>Jose A Martínez</autor>
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- ## ELEMENTOS COMPUESTOS ## -->
+
+    <xs:element name="personas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="persona" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="apellido" maxOccurs="2"/>
+                <xs:element ref="edad" minOccurs="0"/>
+                <xs:element ref="dni"/>
+                <xs:group ref="contacto"/>
+                <xs:element ref="direccion"/>
+                <xs:element ref="jefe" minOccurs="0"/>
+                <xs:element ref="caracteristicas" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="idPersona" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jefe">
+        <xs:complexType>
+           <xs:attribute ref="idJefe" use="required"></xs:attribute> 
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="caracteristicas">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="idioma"/>
+                <xs:element ref="lenguajeProgramacion"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+<!-- ## GRUPOS DE ELEMENTOS ##  -->
+<xs:group name="contacto">
+    <xs:choice>
+        <xs:sequence>
+            <xs:element ref="telefono"/>
+            <xs:element ref="email" minOccurs="0"/>
+        </xs:sequence>
+        <xs:sequence>
+            <xs:element ref="email"/>
+            <xs:element ref="telefono" minOccurs="0"/>
+        </xs:sequence>
+    </xs:choice>
+</xs:group>
+
+<!-- ## ELEMENTOS SIMPLES ## -->
+<xs:element name="nombre" type="tipoNombreApellido"/>
+<xs:element name="apellido" type="tipoNombreApellido"/>
+<xs:element name="edad" type="tipoEdad"/>
+<xs:element name="dni" type="tipoDNI"/>
+<xs:element name="telefono" type="tipoTelefono"/>
+<xs:element name="email" type="tipoEmail"/>
+<xs:element name="direccion" type="xs:string"/>
+<xs:element name="idioma" type="idiomaLenguaje"/>
+<xs:element name="lenguajeProgramacion" type="idiomaLenguaje"/>
+
+<!-- ## ATRIBUTOS ## -->
+<xs:attribute name="idPersona" type="tipoIdPersona"/>
+<xs:attribute name="idJefe" type="xs:IDREF"/>
+<xs:attribute name="nivel" type="tipoNivel"/>
+                
+
+
+<!-- ## DEFINICION DE TIPOS ## -->
+<xs:simpleType name="tipoIdPersona">
+    <xs:restriction base="xs:ID">
+        <xs:pattern value="[A-Z]{2}\-\d{2}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoNombreApellido">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+        <xs:maxLength value="30"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoEdad">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:minInclusive value="18"/>
+        <xs:maxInclusive value="99"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoDNI">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{2}\.\d{3}.\d{3}\-[A-Z]"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoTelefono">
+    <xs:restriction base="xs:string">
+    <xs:pattern value="[69]\d{2}\-\d{3}\-\d{3}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoEmail">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[^@]+@[^\.]+\..+"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="idiomaLenguaje">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute ref="nivel"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:simpleType name="tipoNivel">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="A1"/>
+        <xs:enumeration value="A2"/>
+        <xs:enumeration value="B1"/>
+        <xs:enumeration value="B2"/>
+        <xs:enumeration value="C1"/>
+        <xs:enumeration value="C2"/>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

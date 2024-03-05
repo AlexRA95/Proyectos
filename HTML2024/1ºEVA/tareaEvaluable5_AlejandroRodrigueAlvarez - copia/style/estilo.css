@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    
+    
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    margin: 1rem;
+
+}
+
+.cor{
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center .cor{
+    width: 5rem;
+    text-align: center;
+    margin: 1rem 0;
+    border: none;
+}
+
+.center .cor:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.back{
+    
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cielo{background-color: blue;}
+
+.noche{
+    background-color: grey;
+}
+
+.sol{
+    background-color: yellow;
+    padding: 5rem;
+    border-radius: 50%;
+}
+
+.luna{
+    background-color: white;
+    padding: 5rem;
+    border-radius: 50%;
+}
+
+.right{
+    margin: 1rem;
+    width: 30rem;
+}
+
+.seVe{
+    color: white;
+    background-color: #484848;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.seVe .icono{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.seVe .icono:hover{
+    cursor: pointer;
+}
+
+.noSeVe{
+    background-color: #dcdadc;
+    padding: 1rem;
+    display: none;
+    
+}
+
+
+
+
+

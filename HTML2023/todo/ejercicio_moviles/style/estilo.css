@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: paco;
+    src: url(../font/CutiveMono-Regular.ttf);
+}
+
+.container{
+    width: 300px;
+    height: 570px;
+    background-color: #000;
+    margin: 40px auto;
+    border-radius: 40px;
+}
+
+.box_up{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.camara{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(107, 107, 107);
+    display: block;
+    margin-left: 40px;
+    top: 15px;
+}
+
+.circles{
+    width: 8px;
+    height: 8px;
+    display: block;
+    background-color: rgb(107, 107, 107);
+    border-radius: 50%;
+    margin-left: 60px;
+    top: 3px;
+    position: relative;
+}
+
+.circles::before{
+    content: '';
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(107, 107, 107);
+    border-radius: 50%;
+    left: 11px;
+}
+
+.audio{
+    width: 70px;
+    height: 7px;
+    background-color: rgb(107, 107, 107);
+    display: block;
+    position: relative;
+    border-radius: 20%;
+    left: 40%;
+    opacity: 0.6;
+}
+
+.screen{
+    width: 280px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.screen .logo{
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+.screen .text{
+    font-family: paco;
+    top: 100px;
+    position: relative;
+    font-size: 1.5rem;
+    left: 20%;
+}
+
+
+.button_down{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+.btn_home{
+    width: 70px;
+    height: 25px;
+    border-radius: 40px;
+    border: 2px solid rgb(151, 151, 151);
+    display: block;
+    position: relative;
+    margin-left: 40%;
+    top: 20px;
+    background-color: #000;
+}
+
+#container2{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+}

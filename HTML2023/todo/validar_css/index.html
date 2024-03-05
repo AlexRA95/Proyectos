@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--Cabecera-->
+  <head>
+    <title>Web 2023</title>
+    <meta name="keywords" content="web,desarrollo,ciclo,smr" />
+    <meta name="description" content="Desarrollo Web" />
+    <meta name="author" content="Alejandro" />
+    <link rel="stylesheet" type="text/css" href="style/estilo.css" />
+  </head>
+
+  <!--Cuerpo-->
+  <body>
+        <h3>FORMULARIO</h3>
+
+            <form action="#" method="post">
+                
+                <label for="nombre">Nombre</label>
+                <input type="text" pattern="[a-zA-Z]{1,5}" required id="nombre" placeholder="Escribir nombre...">
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" placeholder="Escribir tus apellidos...">
+                
+                <label for="edad">Edad</label>
+                <input type="text" pattern="[18-100]{1}" required id="edad" placeholder="Escribir edad...">
+
+                <label for="email">Email</label>
+                <input type="email" readonly value="algo@gmail.com" id="email" placeholder="Escribir tu email...">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="35" rows="5" placeholder="Escribir mensaje"></textarea>
+
+                <input type="submit" id="boton" value="Enviar datos">
+
+            </form>
+
+
+  </body>
+</html>

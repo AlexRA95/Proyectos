@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Cabecera-->
+    <head>
+        <title>Web 2023</title>
+        <meta name="keywords" content="web,desarrollo,ciclo,smr"/>
+        <meta name="description" content="Desarrollo Web"/>
+        <meta name="author" content="Alejandro"/>
+    </head>
+
+    <!--Cuerpo-->
+    <body>
+        <h3>Formularios</h3>
+        <form method="post" action="" >
+            <p>Comentarios
+                <textarea name="comentarios" cols="20" rows="5"></textarea>
+            </p>
+            <br>
+            <p><label for="Nombre">Nombre:</label><input type="text" name="nombre" size="40" placeholder="Escribir tu nombre..." /></p>
+            <p><label for="Nombre">Contraseña</label><input type="password" name="nombre" size="20" maxlength="5" placeholder="Contraseña..." /></p>
+             <p><label for="Año_Nacimiento">Año de Nacimiento:</label><input type="number" name="edad" min="1990" /> </p>
+             <p><label for="Sexo">Sexo:</label> 
+                <input type="radio" name="sexo" value="hombre" />Hombre 
+                <input type="radio" name="sexo" value="mujer"/> Mujer
+            </p>
+            <p><label for="Fecha">Fecha</label>
+            <input type="date">
+            <input type="time">
+            <p><input type="checkbox" checked >Eres mayor de edad</p>
+            <br>
+            <input type="color">
+            <br>
+            <input type="range" min="1" max="100">
+            <br>
+            <input type="range" min="1" max="3" list="rango">
+            <datalist id="rango">
+                <option value="1" label="basico" >
+                    <option value="2" label="medio" > 
+                        <option value="3" label="superior" > 
+                    
+            </datalist>
+            </p>
+            <p><label for="localidad">Localidad:</label>
+                <select name="localidad" multiple>
+                    <option value="" checked>--Selecionar--</option>
+                    <option value="Merida">Mérida</option>
+                    <option value="Badajoz">Badajoz</option>
+                    <option value="Caceres">Caceres</option>
+                </select>
+            </p>
+
+            <p>
+                <!--<input type="submit" value="Enviar Formluario" />-->
+                <button type="submit">
+                    <img src="/imagenes/disco.png" width="20px" height="20px" style="vertical-align: middle;" >
+                    Guardar
+                </button>
+                <input type="reset" value="Borrar" />
+            </p>
+        </form>
+
+
+    </body>
+</html>

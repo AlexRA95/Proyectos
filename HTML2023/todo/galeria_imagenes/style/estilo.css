@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+#contenedor{
+    float: left;
+    width: 33%;
+    padding: 5px;
+}

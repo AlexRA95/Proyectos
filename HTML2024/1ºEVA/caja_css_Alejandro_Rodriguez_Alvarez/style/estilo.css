@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box1{
+
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    padding: 1rem;
+    display: block;
+    border-radius: 1rem;
+    width: 15rem;
+    font-family: Lato;
+    text-align: center;
+    padding-bottom: 2rem;
+    transition: box-shadow 1s;
+
+}
+
+.imgfib{
+
+border-radius: 1rem;
+box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+width: 100%;
+
+}
+
+.titulo1{
+
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.titulo2{
+
+    letter-spacing: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+
+
+.cajas {
+
+    box-shadow: inset 0.2rem 0.2rem 0.3rem 0.01rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: rgba(0, 0, 0, 0.45);
+    background-color: rgb(241, 239, 236);
+    font-weight: bold;
+    margin: 0.4rem;
+
+}
+
+.lista{
+
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.enlace{
+
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 0.7rem;
+    background-color: rgba(255, 255, 80, 0.793);
+    
+    
+
+}
+
+.box1:hover{
+
+    box-shadow: 0.2rem 0.2rem 1rem black;
+
+
+}
+
+.enlace:hover{
+
+    background-color: rgb(255, 255, 80);
+
+}
+
+.enlace:active{
+
+    padding: 0.5rem;
+
+}

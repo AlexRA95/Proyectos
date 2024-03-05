@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    display: flex;
+    flex-direction: column; 
+    flex: 15%;
+    margin:  3rem;
+    border: 0.1rem solid rgba(170, 170, 170, 0.5);
+}
+
+section article div{
+    text-align: center;
+}
+
+.top, .bottom{
+    background: linear-gradient(to right, indianred, orangered  );
+    transition: background  5s;
+}
+
+.top:hover, .bottom:hover{
+        background: linear-gradient(to right, red, blue);
+}
+
+.top{
+    
+    width: 100%;
+    padding: 3rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.mid{
+    width: 100%;
+    padding: 1rem;
+    
+}
+
+.bottom{
+    
+    padding: 0.7rem;
+    
+}
+
+.bottom a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Tablet*/
+@media screen and (max-width:1200px) {
+    article{
+        flex: 40%;
+    }
+}
+
+/*Movil*/
+@media screen and (max-width:1000px) {
+    article{
+        flex: 100%;
+    }
+}
+
+

@@ -1,0 +1,39 @@
+main{
+
+display: grid;
+gap: 1rem;
+
+
+}
+
+main div{
+
+padding: 4rem;
+
+}
+
+.azul{
+
+    border: 0.3rem solid blue;
+    background-color: rgba(0, 0, 220, 0.2);
+    
+    grid-column: 1/12;
+    grid-row: 1;
+
+}
+
+.rojo{
+    border: 0.3rem solid red;
+    background-color: rgba(220, 0, 0, 0.2);
+   
+    grid-column: 1/11;
+    grid-row: 2;
+}
+
+.negro{
+    border: 0.3rem solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    grid-column: 11/12;
+    grid-row: 2;
+}

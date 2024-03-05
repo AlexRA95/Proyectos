@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor{
+    background-color: black;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:620px) {
+
+    h4{
+        background-color: aquamarine;
+        color: red;
+    }
+
+    .text{
+        display: none;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1280px) {
+
+    .contenedor{
+        background-color: gray;
+        color: yellow;
+    }
+    
+}
+
+@media (min-width:700px) and (orientation: landscape) {
+    
+}

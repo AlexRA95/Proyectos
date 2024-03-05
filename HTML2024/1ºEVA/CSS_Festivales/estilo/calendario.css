@@ -1,0 +1,166 @@
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+}
+
+aside{
+
+margin-right: 1rem;
+padding: 1rem;
+border-right: 1px solid grey;
+height: fit-content;
+display: flex;
+flex-direction: column;
+
+}
+
+aside a{
+
+    color: grey;
+    text-decoration: none;
+    padding: 0.5rem 0;
+
+}
+
+article{
+    
+    border-radius: 5px;
+    
+    
+    width: 80%;
+    max-height: 24rem !important;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+    
+    
+
+}
+
+article::-webkit-scrollbar{
+
+    display: none;
+
+}
+
+
+section{
+
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+#junio, #julio, #agosto, #septiembre{
+
+   border-bottom: 1px solid rgb(172, 170, 170);
+   margin: 1rem;
+   
+   
+   
+
+
+}
+
+#septiembre{
+
+    border: none;
+
+}
+
+
+section .box{
+
+    background-color: white;
+    
+    margin: 1rem;
+    width: 20%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+
+}
+
+
+
+section .box .head{
+
+    
+    background-color: grey;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    
+    
+
+
+}
+
+
+section .box .body{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: beige;
+    height: 100%;
+    
+    
+
+
+}
+
+section .box .body h3, section .box .body p{
+
+    margin: 0.2rem 0;
+
+}
+
+
+
+
+
+section .mes {
+
+    font-weight: bold;
+    
+    background-color: rgb(49, 49, 49);
+    
+    color: white;
+    
+    
+
+}
+
+section .mes p{
+
+    
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    
+
+}

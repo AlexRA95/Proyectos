@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+#caja1{
+    width: 180px;
+    height: 100px;
+    background-color: brown;
+    transition: background-color 0.5s linear, font-size 1s ease;
+}
+
+#caja1 p{
+    padding: 10px;
+    line-height: 70px;
+}
+
+#caja1:hover{
+    background-color: blue;
+    font-size: 10pt;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo/style.css" />
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de datos</h1>
+    </header>
+
+    <main>
+        <form action="examen.php" method="post">
+            <!--1º-->
+            <article class="first">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <section>
+                        <input type="text" class="hidden" value="prueba">
+                        <p>* Nombre:</p>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ej. Pepe" pattern="[a-zA-Z]{1,15}"
+                            required />
+
+                        <p>* Apellidos:</p>
+                        <input type="text" name="apellido" id="apellido" pattern="[a-zA-Z]{1,30}"
+                            placeholder="Ej. Gotera" required />
+
+                        <p>* Fecha de nacimiento</p>
+                        <input type="date" name="nacimiento" id="nacimiento" required />
+
+                        <p>Direcci&#243;n:</p>
+                        <input type="text" name="direccion" id="direccion" placeholder="Ej. Rue del Percebe" />
+                    </section>
+
+                    <section>
+                        <p>Tel&#233;fono fijo:</p>
+                        <input type="text" name="fijo" pattern="[9]{1}[1-9]{8}" id="fijo" placeholder="Ej. 924330310" />
+
+                        <p>* Tel&#233;fono movil:</p>
+                        <input type="text" name="movil" id="movil" pattern="[6-7]{1}[1-9]{8}"
+                            placeholder="Ej. 673123234" required />
+
+                        <p>* Correo electr&#243;nico</p>
+                        <input type="email" name="email" id="email" required placeholder="Ej. correo@gmail.com" />
+
+                        <p>Sexo</p>
+                        <input type="radio" name="sexo" id="hombre" />
+                        <label for="hombre">Hombre</label>
+
+                        <input type="radio" name="sexo" id="mujer" checked />
+                        <label for="mujer">Mujer</label>
+                    </section>
+                </fieldset>
+            </article>
+
+            <!--2º-->
+            <article class="second">
+                <fieldset>
+                    <legend>Datos del registro</legend>
+
+                    <label for="user">* Usuario: </label>
+                    <input type="text" name="user" id="user" pattern="[a-zA-Z]{1,10}" placeholder="Ej. usuario" />
+
+                    <label for="pass">* Contrase&#241;a: </label>
+                    <input type="password" pattern="[A-Z]{1}[a-zA-z]{8}" name="password" id="pass" />
+
+                    <label for="texto">Condiciones: </label>
+                    <textarea name="texto" id="texto" cols="60" rows="5"
+                        placeholder="Se trata de una tecnica definida por Microsoft que permite establecer las posibilidades del lenguaje HTML. Al igual que los Applets de Java, son programas independientes que se ejecutan dentro de una p&#225;gina HTML, pero se diferencian de estos &#250;ltimos en que se dise&#241;an como controles y componentes muy parecidos a los que se utilizan en programaci&#243;n visual."
+                        readonly></textarea>
+                </fieldset>
+            </article>
+
+            <!--3º-->
+            <article class="third">
+                <fieldset>
+                    <legend>Otros datos</legend>
+
+                    <p>Aficiones:</p>
+                    <input type="checkbox" name="aficion" id="depor" />
+                    <label for="depor">Deporte</label>
+
+                    <input type="checkbox" name="aficion" id="musica" />
+                    <label for="musica">M&#250;sica</label>
+
+                    <input type="checkbox" name="aficion" id="informatica" />
+                    <label for="informatica">Inform&#225;tica</label>
+
+                    <input type="checkbox" name="aficion" id="viajes" />
+                    <label for="viajes">Viajes</label>
+
+                    <input type="checkbox" name="aficion" id="ocio" />
+                    <label for="ocio">Ocio</label>
+
+                    <input type="checkbox" name="aficion" id="tienda" />
+                    <label for="tienda">Tienda</label>
+
+                    <input type="checkbox" name="aficion" id="ropa" />
+                    <label for="ropa">Ropa</label>
+
+                    <input type="checkbox" name="aficion" id="juegos" />
+                    <label for="juegos">Juegos</label>
+
+                    <p>Dispone de ordenador:</p>
+                    <input type="radio" name="dispone" id="si" />
+                    <label for="si">S&#237;</label>
+                    <input type="radio" name="dispone" id="no" />
+                    <label for="no">No</label>
+
+                    <p>Sistema Operativo:</p>
+                    <select name="so" id="sistema">
+                        <option value="">Elige uno...</option>
+                        <option value="op1">Linux</option>
+                        <option value="op2">Windows</option>
+                        <option value="op3">Macintosh</option>
+                        <option value="op4">Solaris</option>
+                    </select>
+
+                    <p>Programas que utilizas (Uno o varios)</p>
+                    <select name="so" id="so" multiple>
+                        <option value="">De gesti&#243;n</option>
+                        <option value="op1">Microsoft Office</option>
+                        <option value="op2">Open Office</option>
+                        <option value="op3">ContaPlus</option>
+                        <option value="op4">Otros</option>
+                        <option value="">Navegadores</option>
+                        <option value="op5">Google Chrome</option>
+                        <option value="op6">Firefox</option>
+                        <option value="op7">Safari</option>
+                        <option value="op8">Opera</option>
+                        <option value="op9">Otros</option>
+                    </select>
+                    <p></p>
+
+                    <label>Mandanos tus fotos (Una o varias)</label>
+                    <input type="file" name="files" id="files" multiple>
+                </fieldset>
+            </article>
+
+            <article class="last">
+                <input type="submit" value="Enviar los datos" />
+                <input type="reset" value="Limpiar Formulario" />
+            </article>
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&#169; Alejandro Rodr&#237;guez &#193;lavarez</p>
+    </footer>
+</body>
+
+</html>

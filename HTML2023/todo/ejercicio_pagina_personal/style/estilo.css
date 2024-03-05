@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(170, 167, 167);
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(78, 77, 77);
+}
+
+header h1 .azul{
+    color: blue;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+section #cajas{
+    display: flex;
+    justify-content: space-between;
+}
+
+section article h1{
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 5px 20px;
+    font-size: 1.8rem;
+    color: rgb(78, 77, 77);
+    font-style: italic;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+section #cajas .prueba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 5px 1px rgb(78, 77, 77);
+}
+
+section #cajas .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section #cajas p{
+    padding: 5px 0;
+    text-align: justify;
+}
+
+section #cajas h3{
+    padding-top: 20px;
+}
+
+section #cajas div h3{
+    color: #fff;
+}
+
+section #cajas #diseño{
+    background-color: darkcyan;
+}
+
+
+
+section #cajas #diseño img{
+    width: 100px;
+    height: 60px;
+}
+
+section #cajas #montaña{
+    background-color: darkkhaki;
+}
+
+section #cajas #montaña img{
+    width: 100px;
+    height: 100px;
+}
+
+section #cajas #animales{
+    background-color: lightcoral;
+}
+
+section #cajas #animales img{
+    width: 100px;
+}
+
+section #aficiones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(170, 167, 167);
+    margin: 0.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 0px 0px 5px 1px rgb(78, 77, 77);
+    padding: 1rem 0.3rem;
+}
+
+section #aficiones h3{
+    color: #fff;
+    padding: 0.7rem;
+}
+
+section #aficiones div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    background-color: #fff;
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 0px 0px 5px 1px rgb(78, 77, 77);
+}
+
+section #aficiones div p{
+    padding: 10px 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 0.7rem;
+}

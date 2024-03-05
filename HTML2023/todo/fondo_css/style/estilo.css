@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/fondospecialized.jpeg);
+    background-size: cover;
+}
+
+#medio{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50%;
+    height: 50%;
+    color: #000;
+    margin: 10rem auto;
+    padding: 10pt;
+}
+
+#medio h3{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+#medio .one{
+    list-style-image: url(../img/bicycle.png);
+}
+
+#medio li{
+    list-style-image: url(../img/mountain-bike.png);
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://www.tiendainformatica.com/index.html</loc>
+        <lastmod>2024-01-23</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.tiendainformatica.com/contactar.html</loc>
+        <lastmod>2024-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.tiendainformatica.com/productos/impresora.html</loc>
+        <lastmod>2020-01-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <image:image>
+            <loc>https://www.tiendainformatica.com/imagenes/impresora.gif</loc>
+            <image:caption>Imagen de una impresora</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.tiendainformatica.com/productos/monitor.html</loc>
+        <lastmod>2023-06-23</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.0</priority>
+        <image:image>
+            <loc>https://www.tiendainformatica.com/imagenes/monitor.gif</loc>
+            <image:caption>Imagen de un monitor</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://www.tiendainformatica.com/productos/teclado.html</loc>
+        <lastmod>2003-09-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <loc>https://www.tiendainformatica.com/imagenes/teclado.gif</loc>
+            <image:caption>Imagen de un teclado</image:caption>
+        </image:image>
+    </url>
+</urlset>

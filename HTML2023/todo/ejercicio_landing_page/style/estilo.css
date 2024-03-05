@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+body{
+    background-color: #C9C9C9;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #232533;
+    padding: 2rem;
+    width: 100%;
+}
+
+header h3{
+    color: #B1B2C9;
+}
+
+header h1{
+    color: #fff;
+}
+
+header div{
+    
+    padding: 1rem;
+}
+
+
+
+.left, .right{
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.left{
+    background-color: #7277E5;
+}
+
+.right{
+    background-color: #C9C9C9;
+}
+
+.left:hover{
+    background-color: #363fe4;
+    font-size: 1.3rem;
+    color: #000000;
+    transition: color 0.5s linear;
+}
+
+.right:hover{
+    background-color: #646363;
+    font-size: 1.3rem;
+    color: #000000;
+    transition: color 0.5s linear;
+}
+
+
+
+header h3, header h1, header div{
+    margin: 1rem;
+    
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+main #caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+main #caja img{
+    width: 80%;
+    margin: 1rem 0;
+}
+
+main #caja div{
+    display: flex;
+    justify-content: center;
+}
+
+main #caja p{
+    margin: 1rem;
+}
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa
+    xmlns:de="http://www.alex.es/departamento"
+    xmlns:re="http://www.alex.es/recursos"
+    xmlns:em="http://www.alex.es/empleado">
+    <de:departamentos>
+        <de:departamento>
+            <de:nombre>Dirección</de:nombre>
+            <de:planta>10</de:planta>
+            <de:despacho>--</de:despacho>
+        </de:departamento>
+        <de:departamento>
+            <de:nombre>Ventas</de:nombre>
+            <de:planta>9</de:planta>
+            <de:despacho>B</de:despacho>
+        </de:departamento>
+        <de:departamento>
+            <de:nombre>Marketing</de:nombre>
+            <de:planta>8</de:planta>
+            <de:despacho>C</de:despacho>
+        </de:departamento>
+        <de:departamento>
+            <de:nombre>Almacen</de:nombre>
+            <de:planta>Calle</de:planta>
+            <de:despacho>--</de:despacho>
+        </de:departamento>
+        <de:departamento>
+            <de:nombre>Compras</de:nombre>
+            <de:planta>9</de:planta>
+            <de:despacho>W</de:despacho>
+        </de:departamento>
+    </de:departamentos>
+    <re:recursos>
+        <re:recurso id="1">
+            <re:nombre>Coche de lujo de la empresa</re:nombre>
+        </re:recurso>
+        <re:recurso id="2">
+            <re:nombre>Movil de empresa</re:nombre>
+        </re:recurso>
+        <re:recurso id="3">
+            <re:nombre>Portatil</re:nombre>
+        </re:recurso>
+    </re:recursos>
+    <em:empleados id="1">
+        <em:nombre>John</em:nombre>
+        <em:apellido>Smith</em:apellido>
+        <em:cargo>Director</em:cargo>
+        <em:departamento>Dirección</em:departamento>
+        <em:recursos>1,2,3</em:recursos>
+        <em:mail>dire@no.org</em:mail>
+        <em:telefono>555111111</em:telefono>
+    </em:empleados>
+</empresa>

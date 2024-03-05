@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE lunas SYSTEM "biblioteca.dtd"[
+    <!ELEMENT lunas ANY>
+    <!ELEMENT luna EMPTY>
+        <!ATTLIST luna numero ID #REQUIRED>
+        <!ATTLIST luna planeta CDATA #REQUIRED>
+        <!ATTLIST luna nombre CDATA #REQUIRED>
+        
+
+]>
+
+<lunas>
+    <luna numero="N1234" planeta="marte" nombre="algo" ></luna>
+</lunas>

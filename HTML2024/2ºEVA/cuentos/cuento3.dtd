@@ -1,0 +1,18 @@
+<!ELEMENT cuento (personajes,trama,etiqueta*)>
+    <!ATTLIST cuento cod ID #REQUIRED> <!-- Tiene que ser 1 letra y 2 numeros-->
+    <!ATTLIST cuento titulo CDATA #REQUIRED>
+    <!ATTLIST cuento genero (infantil|fantasia|terror) #IMPLIED>
+    <!ATTLIST cuento precio CDATA #IMPLIED><!-- Tienen que ser 2 digitos y 2 decimales-->
+    <!ATTLIST cuento moneda CDATA "eur">
+<!ELEMENT personajes (personaje+)>
+<!ELEMENT personaje (nombre,genero,(descripcion|imagen|url)?)>
+    <!ATTLIST personaje id ID #REQUIRED>
+    <!ATTLIST personaje tipo (principal |secundario |antagonista ) "principal"> 
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (#PCDATA)> <!-- Solo puede ser M, F o N-->
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT trama (#PCDATA)>
+<!ELEMENT etiqueta EMPTY>
+    <!ATTLIST etiqueta nombre CDATA #REQUIRED>

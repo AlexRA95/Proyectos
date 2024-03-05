@@ -1,0 +1,15 @@
+.click::after{
+    content: "En pantalla grande";
+}
+
+@media screen and (max-width: 1024px) {
+    .click::after{
+        content: "Tablet";
+    }
+}
+
+@media screen and (max-width: 640px ) {
+    .click::after{
+        content: "Movil";
+    }
+}
