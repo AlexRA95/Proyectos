@@ -1,0 +1,19 @@
+*{
+    display: list-item;
+    list-style: none;
+}
+libro{
+    border: solid black 0.1rem;
+    margin: 1rem;
+    background-color: lightgreen;
+    
+}
+titulo{
+    font-weight: bold;
+    background-color: white;
+    border-bottom: solid black 0.1rem;
+}
+
+biblioteca{
+    background-color: grey;
+}

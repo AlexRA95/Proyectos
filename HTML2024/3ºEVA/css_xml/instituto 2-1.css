@@ -1,0 +1,10 @@
+*{
+    display: list-item;
+    margin-top: 0.5rem;
+}
+
+nombre,grado,decretoTitulo{
+    list-style: disc;
+    margin-left: 1rem;
+    
+}

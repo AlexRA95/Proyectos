@@ -1,0 +1,21 @@
+*{
+    display: list-item;
+}
+
+nombre,grado,decretoTitulo{
+    list-style: disc;
+    margin-left: 1rem;
+    
+}
+nombre{
+    list-style: none;
+    margin: 0;
+}
+
+nombreCentro{
+    font-size: 1.5rem;
+}
+
+nombreCentro,web,ciclo{
+    margin-top: 1rem;
+}

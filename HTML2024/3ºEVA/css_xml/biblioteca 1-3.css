@@ -1,0 +1,10 @@
+*{
+    display: list-item;
+    list-style: none;
+}
+
+libro{
+    border: solid black 0.1rem;
+    margin: 0.5rem;
+    background-color: lightgreen;
+}
