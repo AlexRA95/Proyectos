@@ -1,0 +1,35 @@
+<!ELEMENT festival (informacion,escenarios,conciertos,abonos)>
+        <!ATTLIST festival cod NMTOKEN #REQUIRED> <!-- Formado por 1 letra 1 '-' y 2 numeros sin espacios en blanco-->
+        <!ATTLIST festival nombre CDATA #REQUIRED>
+        <!ATTLIST festival genero (electronico|indie|pop) #IMPLIED>
+        <!ATTLIST festival xmlns:xsi CDATA #IMPLIED>
+        <!ATTLIST festival xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+    <!ELEMENT informacion (localidad,provincia,inicio,fin,edicion?)>
+        <!ELEMENT localidad (#PCDATA)>
+        <!ELEMENT provincia (#PCDATA)>
+        <!ELEMENT inicio (#PCDATA)>
+        <!ELEMENT fin (#PCDATA)>
+        <!ELEMENT edicion (#PCDATA)>
+    <!ELEMENT escenarios (escenario+)> <!-- Puede haber 1 o 2-->
+        <!ELEMENT escenario (ubicacion,potencia,niebla?)>
+                <!ATTLIST escenario idEscenario ID #REQUIRED>
+            <!ELEMENT ubicacion (#PCDATA)>
+            <!ELEMENT potencia (#PCDATA)>
+            <!ELEMENT niebla EMPTY>
+    <!ELEMENT conciertos (concierto+)>
+        <!ELEMENT concierto ( dj | banda )>
+                <!ATTLIST concierto escenario IDREF #REQUIRED>
+                <!ATTLIST concierto fecha CDATA #IMPLIED>
+                <!ATTLIST concierto hora CDATA #IMPLIED>
+            <!ELEMENT dj EMPTY>
+                <!ATTLIST dj nombre CDATA #REQUIRED>
+                <!ATTLIST dj genero (electronico | indie | pop) #REQUIRED>
+            <!ELEMENT banda (nombre,integrante+)> <!-- Minimo 2 integrantes-->
+                    <!ATTLIST banda idBanda ID #REQUIRED> <!-- 3 letras sin espacios-->
+                <!ELEMENT nombre (#PCDATA)>
+                <!ELEMENT integrante EMPTY>
+                    <!ATTLIST integrante nombre CDATA #REQUIRED>
+                    <!ATTLIST integrante instrumento (teclados | cuerda | percusion ) #IMPLIED>
+    <!ELEMENT abonos (abono+)>
+        <!ELEMENT abono (#PCDATA)> <!-- Numero de 3 digitos enteros y 2 decimales-->
+            <!ATTLIST abono dias CDATA "1"> <!-- Numeros positivos-->

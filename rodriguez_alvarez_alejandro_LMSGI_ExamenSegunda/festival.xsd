@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="festival">
+        <xs:complexType>
+            <xs:group ref="eleFestival"></xs:group>
+            <xs:attributeGroup ref="attFestival"></xs:attributeGroup>
+        </xs:complexType>
+    </xs:element>
+    <!-- Grupos de elementos-->
+    <xs:group name="eleFestival">
+        <xs:sequence>
+            <xs:element name="informacion">
+                <xs:complexType>
+                    <xs:group ref="eleInfo"></xs:group>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="escenarios">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="escenario" maxOccurs="2" minOccurs="1">
+                            <xs:complexType>
+                                <xs:group ref="eleEsce"></xs:group>
+                                <xs:attribute ref="idEscenario" use="required"></xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="conciertos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="concierto" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:group ref="eleConci"></xs:group>
+                                <xs:attributeGroup ref="attConci"></xs:attributeGroup>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="abonos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="abono" maxOccurs="unbounded" minOccurs="1">
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="eleConci">
+        <xs:choice>
+            <xs:element name="banda">
+                <xs:complexType>
+                    <xs:group ref="eleBanda"></xs:group>
+                    <xs:attribute ref="idBanda"></xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="dj">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="nombre" use="required"></xs:attribute>
+                            <xs:attribute ref="genero" use="required"></xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:group>
+    <xs:group name="eleBanda">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"></xs:element>
+            <xs:element name="integrante" maxOccurs="unbounded" minOccurs="2">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="nombre" use="required"></xs:attribute>
+                            <xs:attribute ref="instrumento" use="optional"></xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="eleEsce">
+        <xs:sequence>
+            <xs:element name="ubicacion" type="xs:string"></xs:element>
+            <xs:element ref="potencia"></xs:element>
+            <xs:element name="niebla" maxOccurs="1" minOccurs="0"></xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="eleInfo">
+        <xs:sequence>
+            <xs:element name="localidad" type="xs:string"></xs:element>
+            <xs:element name="provincia" type="xs:string"></xs:element>
+            <xs:element name="inicio" type="xs:date"></xs:element>
+            <xs:element name="fin" type="xs:date"></xs:element>
+            <xs:element name="edicion" type="xs:integer" minOccurs="0" maxOccurs="1"></xs:element>
+        </xs:sequence>
+    </xs:group>
+    <!-- Elementos con restricciones-->
+    <xs:element name="potencia">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:maxInclusive value="50000"></xs:maxInclusive>
+                <xs:minInclusive value="25000"></xs:minInclusive>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="abono">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="resAbono">
+                    <xs:attribute ref="dias" default="1"></xs:attribute>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="resAbono">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- Grupos de atributos-->
+    <xs:attributeGroup name="attFestival">
+        <xs:attribute ref="cod" use="required"></xs:attribute>
+        <xs:attribute ref="nombre" use="required"></xs:attribute>
+        <xs:attribute ref="genero" use="optional"></xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="attConci">
+        <xs:attribute ref="escenario" use="required"></xs:attribute>
+        <xs:attribute ref="fecha" use="optional"></xs:attribute>
+        <xs:attribute ref="hora" use="optional"></xs:attribute>
+    </xs:attributeGroup>
+    <!-- Atributos-->
+    <xs:attribute name="cod">
+        <xs:simpleType>
+            <xs:restriction base="xs:NMTOKEN">
+                <xs:pattern value="[A-Z]{1}[-]{1}[0-9]{2}"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+    <xs:attribute name="genero">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="electronico"></xs:enumeration>
+                <xs:enumeration value="pop"></xs:enumeration>
+                <xs:enumeration value="indie"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="idEscenario" type="xs:ID"></xs:attribute>
+    <xs:attribute name="escenario" type="xs:IDREF"></xs:attribute>
+    <xs:attribute name="fecha" type="xs:date"></xs:attribute>
+    <xs:attribute name="hora" type="xs:time"></xs:attribute>
+    <xs:attribute name="idBanda">
+        <xs:simpleType>
+            <xs:restriction base="xs:ID">
+                <xs:pattern value="[A-Z]{3}"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="instrumento">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="teclados"></xs:enumeration>
+                <xs:enumeration value="cuerda"></xs:enumeration>
+                <xs:enumeration value="percusion"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="dias">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minExclusive value="0"></xs:minExclusive>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:schema>

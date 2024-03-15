@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE festival SYSTEM "festival.dtd">
+<festival cod="F-01" nombre="FIB" genero="indie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="festival.xsd">
+    <informacion>
+        <localidad>benicassim</localidad>
+        <provincia>Castellon</provincia>
+        <inicio>2024-07-18</inicio>
+        <fin>2024-07-20</fin>
+    </informacion>
+    <escenarios>
+        <escenario idEscenario="ES1">
+            <ubicacion>Zona norte</ubicacion>
+            <potencia>50000</potencia>
+            <niebla/>
+        </escenario>
+        <escenario idEscenario="ES2">
+            <ubicacion>Zona este</ubicacion>
+            <potencia>37000</potencia>
+        </escenario>
+    </escenarios>
+    <conciertos>
+        <concierto escenario="ES1" fecha="2024-07-17">
+            <banda idBanda="LSP">
+                <nombre>Los planetas</nombre>
+                <integrante nombre="J Rodriguez"/>
+                <integrante nombre="Florent" instrumento="cuerda"/>
+                <integrante nombre="Eric" instrumento="percusion"/>
+                <integrante nombre="Banin" instrumento="cuerda"/>
+                <integrante nombre="Miguel" instrumento="teclados"/>
+            </banda>
+        </concierto>
+        <concierto escenario="ES2" fecha="2024-07-19" hora="22:00:00">
+            <dj nombre="DJ Nano" genero="electronico"/>
+        </concierto>
+        <concierto escenario="ES1">
+            <banda idBanda="MJS">
+                <nombre>Mujeres</nombre>
+                <integrante nombre="Pol Rodellar"/>
+                <integrante nombre="Yago Alcover" instrumento="cuerda"/>
+                <integrante nombre="Tito Sanz" instrumento="percusion"/>
+            </banda>
+        </concierto>
+        <concierto escenario="ES1" fecha="2024-07-20" hora="22:00:00">
+            <dj nombre="DJ Macciato" genero="indie"/>
+        </concierto>
+    </conciertos>
+    <abonos>
+        <abono dias="1">125.00</abono>
+        <abono dias="2">185.50</abono>
+        <abono dias="3">230.99</abono>
+    </abonos>
+</festival>
