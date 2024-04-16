@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><inventario><producto codigo="P1">
+        <peso unidad="kg">10</peso>
+        <nombre>Ordenador</nombre>
+        <lugar edificio="B">
+            <aula>10</aula>
+        </lugar>
+    </producto><producto codigo="P4">
+        <peso unidad="g">200</peso>
+        <nombre>Ratón inalámbrico</nombre>
+        <lugar edificio="B">
+            <aula>5</aula>
+        </lugar>
+    </producto><producto codigo="P6">
+        <peso unidad="kg">2.8</peso>
+        <nombre>Escáner</nombre>
+        <lugar edificio="B">
+            <aula>8</aula>
+        </lugar>
+    </producto><producto codigo="P9">
+        <peso unidad="kg">0.9</peso>
+        <nombre>Router Wi-Fi</nombre>
+        <lugar edificio="B">
+            <aula>2</aula>
+        </lugar>
+    </producto><producto codigo="P12">
+        <peso unidad="g">700</peso>
+        <nombre>Auriculares Bluetooth</nombre>
+        <lugar edificio="B">
+            <aula>12</aula>
+        </lugar>
+    </producto><producto codigo="P15">
+        <peso unidad="g">1200</peso>
+        <nombre>Webcam HD</nombre>
+        <lugar edificio="B">
+            <aula>4</aula>
+        </lugar>
+    </producto><producto codigo="P18">
+        <peso unidad="kg">4.2</peso>
+        <nombre>Impresora de etiquetas</nombre>
+        <lugar edificio="B">
+            <aula>9</aula>
+        </lugar>
+    </producto></inventario>

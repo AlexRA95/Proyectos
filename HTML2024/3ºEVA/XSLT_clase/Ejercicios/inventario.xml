@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<inventario>
+    <producto codigo="P1">
+        <peso unidad="kg">10</peso>
+        <nombre>Ordenador</nombre>
+        <lugar edificio="B">
+            <aula>10</aula>
+        </lugar>
+    </producto>
+    <producto codigo="P2">
+        <peso unidad='g'>500</peso>
+        <nombre>Switch</nombre>
+        <lugar edificio="A">
+            <aula>6</aula>
+        </lugar>
+    </producto>
+    <producto codigo="P3">
+        <peso unidad="kg">5.5</peso>
+        <nombre>Impresora</nombre>
+        <lugar edificio="C">
+            <aula>12</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P4">
+        <peso unidad='g'>200</peso>
+        <nombre>Ratón inalámbrico</nombre>
+        <lugar edificio="B">
+            <aula>5</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P5">
+        <peso unidad="kg">1.2</peso>
+        <nombre>Monitor LCD</nombre>
+        <lugar edificio="A">
+            <aula>3</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P6">
+        <peso unidad="kg">2.8</peso>
+        <nombre>Escáner</nombre>
+        <lugar edificio="B">
+            <aula>8</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P7">
+        <peso unidad="kg">3.7</peso>
+        <nombre>Altavoces</nombre>
+        <lugar edificio="C">
+            <aula>7</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P8">
+        <peso unidad="g">1500</peso>
+        <nombre>Teclado mecánico</nombre>
+        <lugar edificio="A">
+            <aula>1</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P9">
+        <peso unidad="kg">0.9</peso>
+        <nombre>Router Wi-Fi</nombre>
+        <lugar edificio="B">
+            <aula>2</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P10">
+        <peso unidad="kg">4.5</peso>
+        <nombre>Impresora láser</nombre>
+        <lugar edificio="C">
+            <aula>5</aula>
+        </lugar>
+    </producto>
+    <producto codigo="P11">
+        <peso unidad="kg">2.3</peso>
+        <nombre>Disco Duro Externo</nombre>
+        <lugar edificio="A">
+            <aula>6</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P12">
+        <peso unidad="g">700</peso>
+        <nombre>Auriculares Bluetooth</nombre>
+        <lugar edificio="B">
+            <aula>12</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P13">
+        <peso unidad="kg">1.8</peso>
+        <nombre>Tableta gráfica</nombre>
+        <lugar edificio="C">
+            <aula>9</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P14">
+        <peso unidad="kg">3.1</peso>
+        <nombre>Escritorio</nombre>
+        <lugar edificio="A">
+            <aula>2</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P15">
+        <peso unidad="g">1200</peso>
+        <nombre>Webcam HD</nombre>
+        <lugar edificio="B">
+            <aula>4</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P16">
+        <peso unidad="kg">1.5</peso>
+        <nombre>Teclado inalámbrico</nombre>
+        <lugar edificio="C">
+            <aula>3</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P17">
+        <peso unidad="kg">2.7</peso>
+        <nombre>Router Ethernet</nombre>
+        <lugar edificio="A">
+            <aula>8</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P18">
+        <peso unidad="kg">4.2</peso>
+        <nombre>Impresora de etiquetas</nombre>
+        <lugar edificio="B">
+            <aula>9</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P19">
+        <peso unidad="g">900</peso>
+        <nombre>Gamepad para PC</nombre>
+        <lugar edificio="C">
+            <aula>6</aula>
+        </lugar>
+    </producto>
+
+    <producto codigo="P20">
+        <peso unidad="kg">2.1</peso>
+        <nombre>Unidad de estado sólido (SSD)</nombre>
+        <lugar edificio="A">
+            <aula>5</aula>
+        </lugar>
+    </producto>
+
+</inventario>

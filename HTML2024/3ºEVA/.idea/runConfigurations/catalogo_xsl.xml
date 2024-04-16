@@ -1,0 +1,22 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="catalogo.xsl" type="XSLT" factoryName="XSLT">
+    <option name="myOutputFile" value="C:\Users\Alex\Desktop\Proyectos\HTML2024\3ºEVA\XSLT_clase\catalogo.html" />
+    <option name="myOpenOutputFile" value="false" />
+    <option name="myOpenInBrowser" value="false" />
+    <option name="mySmartErrorHandling" value="true" />
+    <option name="myRunnerPort" value="34873" />
+    <option name="myVmArguments" value="" />
+    <option name="myWorkingDirectory" value="" />
+    <option name="myModule" />
+    <option name="myJdk" />
+    <XsltFile url="file://$PROJECT_DIR$/XSLT_clase/catalogo.xsl" />
+    <XmlFile url="file://$PROJECT_DIR$/XSLT_clase/catalogo.xml" />
+    <parameters />
+    <OutputType value="CONSOLE" save-to-file="true" />
+    <FileType name="XHTML" />
+    <JdkChoice value="FROM_MODULE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

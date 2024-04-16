@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ies>
+    <modulos>
+        <modulo id="0443">
+          <nombre>Tratamiento de la información Contable</nombre>
+          <curso>2</curso>
+          <horasSemanales>4</horasSemanales>
+          <ciclo>GAD</ciclo>
+        </modulo>
+        <modulo id="0372">
+          <nombre>Gestión de bases de datos</nombre>
+          <curso>1</curso>
+          <horasSemanales>5</horasSemanales>
+          <ciclo>ASIR</ciclo>
+        </modulo>
+        <modulo id="0373">
+          <nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+          <curso>1</curso>
+          <horasSemanales>3</horasSemanales>
+          <ciclo>ASIR</ciclo>
+          <ciclo>DAW</ciclo>
+          <ciclo>DAM</ciclo>
+        </modulo>
+        <modulo id="0376">
+          <nombre>Implantación de aplicaciones web</nombre>
+          <curso>2</curso>
+          <horasSemanales>5</horasSemanales>
+          <ciclo>ASIR</ciclo>
+        </modulo>
+        <modulo id="0486">
+            <nombre>Acceso a datos</nombre>
+            <curso>2</curso>
+            <horasSemanales>7</horasSemanales>
+            <ciclo>DAM</ciclo>
+          </modulo>
+      </modulos>
+</ies>
