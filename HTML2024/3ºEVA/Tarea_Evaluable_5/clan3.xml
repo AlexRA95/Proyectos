@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="clanes.xsl" type="text/xsl"?>
+<!DOCTYPE clan>
+<clan>
+    <informacion>
+        <nombre_clan>Dino II Warriors</nombre_clan>
+        <logo>img/logo3.png</logo>    
+        <emblema>"Fuerza de la naturaleza, valentía de los héroes."</emblema>
+        <descripcion>Los Dino Warriors son un grupo fiero y valiente de dinosaurios humanizados con habilidades únicas y una fuerza combinada imparable en la batalla. Juntos defienden su hogar y aliados con ferocidad y determinación.</descripcion>
+        <colores>
+            <color tipo="clan">#59a952</color>
+            <color tipo="primario">#fff9f2</color>
+            <color tipo="secundario">#000</color>
+        </colores>
+    </informacion>
+
+    <jugadores>
+        <jugador rol="secundario" id="DW01"><!-- principal, secundario, lider -->
+            <jugador_nombre>Thunderclaw</jugador_nombre>
+            <raza>Pyrospino</raza>
+            <foto>img/E2.jpeg</foto>
+            <nivel>5</nivel>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">4</habilidad>
+                <habilidad cod="DES" nombre="destreza">5</habilidad>
+                <habilidad cod="CON" nombre="constitucion">5</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">2</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">8</habilidad>
+                <habilidad cod="CAR" nombre="carisma">2</habilidad>
+            </habilidades>
+        </jugador>
+        <jugador rol="lider" id="DW03"><!-- principal, secundario, lider -->
+            <jugador_nombre>Flamejaw</jugador_nombre>
+            <raza>Goliathops</raza>
+            <foto>img/E3.jpeg</foto>
+            <nivel>8</nivel>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">7</habilidad>
+                <habilidad cod="DES" nombre="destreza">6</habilidad>
+                <habilidad cod="CON" nombre="constitucion">7</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">8</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">8</habilidad>
+                <habilidad cod="CAR" nombre="carisma">7</habilidad>
+            </habilidades>
+        </jugador>
+
+        <jugador rol="secundario" id="DW04"><!-- principal, secundario, lider -->
+            <jugador_nombre>StormSkull</jugador_nombre>
+            <raza>Pyrospino</raza>
+            <foto>img/E4.jpeg</foto>
+            <nivel>4</nivel>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">6</habilidad>
+                <habilidad cod="DES" nombre="destreza">4</habilidad>
+                <habilidad cod="CON" nombre="constitucion">6</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">6</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">2</habilidad>
+                <habilidad cod="CAR" nombre="carisma">2</habilidad>
+            </habilidades>
+        </jugador>
+        <jugador rol="secundario" id="DW05"><!-- principal, secundario, lider -->
+            <jugador_nombre>Rockcrusher</jugador_nombre>
+            <raza>Tempestraptor</raza>
+            <foto>img/E5.jpeg</foto>
+            <nivel>5</nivel>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">2</habilidad>
+                <habilidad cod="DES" nombre="destreza">3</habilidad>
+                <habilidad cod="CON" nombre="constitucion">4</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">8</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">8</habilidad>
+                <habilidad cod="CAR" nombre="carisma">2</habilidad>
+            </habilidades>
+        </jugador>
+        <jugador rol="secundario" id="DW06"><!-- principal, secundario, lider -->
+            <jugador_nombre>Iceheart</jugador_nombre>
+            <raza>Goliathops</raza>
+            <foto>img/E6.jpeg</foto>
+            <nivel>4</nivel>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">5</habilidad>
+                <habilidad cod="DES" nombre="destreza">3</habilidad>
+                <habilidad cod="CON" nombre="constitucion">2</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">4</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">7</habilidad>
+                <habilidad cod="CAR" nombre="carisma">5</habilidad>
+            </habilidades>
+        </jugador>
+        <jugador rol="secundario" id="DW07"><!-- principal, secundario, lider -->
+            <jugador_nombre>Shadowstalker</jugador_nombre>
+            <raza>Pyrospino</raza>
+            <foto>img/E7.jpeg</foto>
+            <nivel>2</nivel>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">2</habilidad>
+                <habilidad cod="DES" nombre="destreza">2</habilidad>
+                <habilidad cod="CON" nombre="constitucion">3</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">5</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">5</habilidad>
+                <habilidad cod="CAR" nombre="carisma">2</habilidad>
+            </habilidades>
+        </jugador>
+        <jugador rol="principal" id="DW08"><!-- principal, secundario, lider -->
+            <jugador_nombre>Goliathops</jugador_nombre>
+            <raza>Tempestraptor</raza>
+            <foto>img/E8.jpeg</foto>
+            <nivel>7</nivel>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">5</habilidad>
+                <habilidad cod="DES" nombre="destreza">5</habilidad>
+                <habilidad cod="CON" nombre="constitucion">6</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">8</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">9</habilidad>
+                <habilidad cod="CAR" nombre="carisma">7</habilidad>
+            </habilidades>
+        </jugador>
+        <jugador rol="principal" id="DW09"><!-- principal, secundario, lider -->
+            <jugador_nombre>Firespike</jugador_nombre>
+            <raza>Tempestraptor</raza>
+            <foto>img/E9.jpeg</foto>
+            <nivel>6</nivel>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">5</habilidad>
+                <habilidad cod="DES" nombre="destreza">5</habilidad>
+                <habilidad cod="CON" nombre="constitucion">7</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">8</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">6</habilidad>
+                <habilidad cod="CAR" nombre="carisma">5</habilidad>
+            </habilidades>
+        </jugador>
+        <jugador rol="secundario" id="DW10"><!-- principal, secundario, lider -->
+            <jugador_nombre>Riverrunner</jugador_nombre>
+            <raza>Pyrospino</raza>
+            <foto>img/E10.jpeg</foto>
+            <nivel>4</nivel>
+            <puntos>24</puntos>
+            <habilidades>
+                <habilidad cod="FUE" nombre="fuerza">5</habilidad>
+                <habilidad cod="DES" nombre="destreza">5</habilidad>
+                <habilidad cod="CON" nombre="constitucion">7</habilidad>
+                <habilidad cod="INT" nombre="inteligencia">4</habilidad>
+                <habilidad cod="SAB" nombre="sabiduria">3</habilidad>
+                <habilidad cod="CAR" nombre="carisma">5</habilidad>
+            </habilidades>
+        </jugador>
+    </jugadores>
+    <grupos>
+        <grupo nombre="Dinos">
+            <!-- <integrante>HW02</integrante> -->
+            <integrante>DW01</integrante>
+            <integrante>DW06</integrante>
+        </grupo>
+        <grupo nombre="Zafrys">
+            <integrante>DW08</integrante>
+            <integrante>DW03</integrante>
+        </grupo>
+        <grupo nombre="Aldron">
+            <integrante>DW04</integrante>
+            <integrante>DW07</integrante>
+            <integrante>DW10</integrante>
+            <integrante>DW09</integrante>
+        </grupo>
+    </grupos>
+</clan>
