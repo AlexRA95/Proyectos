@@ -1,7 +1,13 @@
-let num = 0;
-while (num<50) {
-    if (num%2 != 0) {
-        console.log(num);
+let num = Number(prompt("¿Cuantas filas quieres?"));
+let cont=0;
+let fila ="*";
+do {
+    if (num<=0) {
+        cont=num;
+    }else{
+        console.log(fila)
+        fila=fila+"*";
     }
-num = num+1;
-}
+    
+    cont=cont+1;
+} while (cont<num);
