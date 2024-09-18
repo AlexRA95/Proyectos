@@ -1,13 +1,10 @@
 let num = Number(prompt("Elige un número:"));
-let cont=num;
+let result = 1;
 
-if (!isNaN(num)) {
-    while (num>0) {
-        num = num*cont;
-        cont--;
-        console.log(num);
-    }
-    console.log(num);
-}else{
-    console.log("No es un número");
-}
+do {
+    
+} while (condition);
+
+console.log(result);
+
+
