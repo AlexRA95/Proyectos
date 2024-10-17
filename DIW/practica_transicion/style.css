@@ -1,0 +1,60 @@
+.element{
+    background: grey;
+    width: 150px;
+    height: 150px;
+    animation: change-color 2s 0s infinite;
+}
+
+@keyframes change-color {
+    0%{
+        background: red;
+    }
+    50%{
+        background: yellow;
+        width: 400px;
+    }
+    100%{
+        background: green;
+    }
+}
+
+.no-over{
+    overflow: hidden;
+}
+
+p{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    75%{
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.block{
+    height: 300px;
+    width: 300px;
+    animation-name: color-change;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+
+@keyframes color-change {
+    0%{background: #FF0000;}
+    50%{background: #FFC0CB}
+    100%{background: #0000FF;}
+}

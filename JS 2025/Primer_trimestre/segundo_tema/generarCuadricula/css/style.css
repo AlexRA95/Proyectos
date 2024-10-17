@@ -1,0 +1,12 @@
+.cuadrado{
+    border: 1px solid white;
+    margin: 0.05rem;
+    width: 20px;
+    height: 20px;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}

@@ -1,0 +1,37 @@
+button{
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.btn-normal{
+    background-color: #3498db;
+    color: white;
+    cursor: crosshair;
+}
+
+.btn-normal:hover{
+    transform: translateX(100%);
+}
+
+.btn-outline{
+    border: 1px solid #3498db;
+    background: transparent;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.btn-outline:hover{
+    transform: rotateX(30deg) rotateY(20deg);
+}
+
+.btn-alert{
+    background: #e74c3c;
+    color: white;
+    cursor: help;
+}
+
+.btn-alert:hover{
+    transform: scale(2);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hola</p>
+    <P class="test1">a</P>
+    <P class="test1">aa</P>
+    <P class="test1">aaa</P>
+    <P class="test1">aaaa</P>
+
+    <div id="contenedor">
+
+    </div>
+    
+
+    <script>
+        /*
+        let p1 = document.getElementById('p1');
+        let test1= document.getElementsByClassName('test1');
+        let cont = document.getElementById('contenedor');
+        
+        cont.innerHTML = `
+            <h1>dadwadwada<h1>
+            `;
+
+
+            cont.setAttribute("class","clase_personalizada");
+            
+
+        console.log(p1);
+        console.log(test1);
+        */
+
+
+        let cont = document.getElementById('contenedor');
+        let h1 = document.createElement('h1');
+        h1.textContent= "Hola desde clase";
+
+        cont.append(h1);
+    </script>
+</body>
+</html>

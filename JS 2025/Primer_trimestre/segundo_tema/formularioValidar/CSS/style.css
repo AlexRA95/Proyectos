@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+    color: white;
+}
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#formulario{
+    width: 450px;
+    height: 500px;
+    padding-top: 20px;
+    border-radius: 10%;
+    border: 0.5px solid white;
+    background-color:beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#formHead{
+    width: 80%;
+    background-color:beige;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:end;
+    color:#333;
+}
+#formHead h2{
+    background-color:beige;
+    color:#333;
+}
+#imgUsuario{
+    width: 60px;
+    height: 60px;
+    background-color:beige;
+}
+.row{
+    width: 80%;
+    background-color:beige;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.row label{
+    font-weight: bold;
+    background-color:beige;
+    color:#333;
+    width: 30%;
+    text-align: end;
+
+}
+.row input{
+    background-color: beige;
+    border: 1px solid #333;
+    border-radius: 10%;
+    height: 20px;
+    width: 50%;
+}
+#confirmarLabel{
+   width: 50%;
+   text-align: left;
+}
+#botonRegistrar{
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15%;
+    color: beige;
+    
+}
+
+.bien{
+    border-color: green;
+}
+
+.mal{
+    border-color: red;
+}

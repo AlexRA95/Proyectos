@@ -1,0 +1,68 @@
+.cuadrado{
+    background: black;
+}
+
+.element:hover{
+    transform: translate(20%,30%) skewX(30deg) skewY(20deg);
+}
+
+div{
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#d2{
+    transform: scale(1,0.5);
+}
+
+#d3{
+    transform: rotate(45deg);
+}
+
+#d4{
+    transform: skewX(-45deg);
+}
+
+#d5{
+    transform: skewY(-45deg);
+}
+
+.tresD{
+    transform-style: preserve-3d;
+    transform: rotateX(22deg) rotateY(22deg) rotateZ(22deg);
+    perspective: 300px;
+}
+
+.container{
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(22deg) rotateY(22deg) rotateZ(22deg);
+    perspective: 400px;
+}
+
+.container .element{
+    width: 100%;
+    height: 100%;
+    background: red;
+    animation: spin 0.41s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotateY(0);
+    }
+    25%{
+        transform: translateX(200px);
+    }
+    50%{
+        transform: translateY(300px);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}

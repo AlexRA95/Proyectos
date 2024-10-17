@@ -1,0 +1,54 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+form label{
+    font-weight: bold;
+}
+
+form input{
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    border-radius: 1rem;
+}
+
+#boton{
+    border-radius: 0.3rem;
+    width: 200px;
+    align-self: center;
+    padding: 0.4rem;
+}
+
+.bien{
+    border: solid green 2px;
+}
+
+.mal{
+    border: solid red 2px;
+}

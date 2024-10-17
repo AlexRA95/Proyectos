@@ -1,0 +1,70 @@
+.container{
+    background: grey;
+    min-height: 300px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadrado1, .cuadrado2, .cuadrado3, .cuadrado4, .cuadrado5, .cuadrado6, .cuadrado7, .cuadrado8, .cuadrado9, .cuadrado10{
+    height: 150px;
+    width: 150px;
+    background: red;
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.cuadrado1{
+    background: blue;
+    order: 2;
+}
+
+.cuadrado2{
+    background: green;
+    order: 3;
+    
+}
+
+.cuadrado3{
+    background: yellow;
+    order: 4;
+}
+
+.cuadrado4{
+    background:aquamarine ;
+    order: 5;
+}
+
+.cuadrado5{
+    background: purple;
+    order: 1;
+}
+
+.cuadrado6{
+    background: peru;
+    order: 10;
+    
+}
+
+.cuadrado7{
+    background: firebrick;
+    order: 6;
+}
+
+.cuadrado8{
+    background: midnightblue;
+    order: 7;
+}
+
+.cuadrado9{
+    background: wheat;
+    order: 8;
+}
+
+.cuadrado10{
+    background: salmon;
+    order: 9;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12 - Formulario de alta</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <h2>Formulario de alta</h2>
+        <form method="post" action="#">
+            <ul>
+                <li>
+                    <label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label>
+                    <div>
+                        <span>
+                            <input id="nombre" name="nombre" value />
+                            <div class="label">
+                                <label for="nombre">Nombre</label>
+                            </div>
+
+                        </span>
+                        <span>
+                            <input id="apellido1" name="apellido1" value />
+                            <div class="label"><label for="apellido1">Primer apellido</label></div>
+                        </span>
+                        <span>
+                            <input id="apellido2" name="apellido2" value />
+                            <div class="label"><label for="apellido2">Segundo apellido</label></div>
+                        </span>
+                    </div>
+                    <p class="ayuda">No te olvides de escribir tambien tu segundo apellido</p>
+                </li>
+                <li class="dir">
+                    <label class="titulo" for="direccion">Direccion <span class="requerido">*</span></label>
+                    <div>
+                        <span>
+                            <input id="direccion" name="direccion" value />
+                            <div class="label"><label for="direccion">Calle, numero, piso, puerta</label></div>
+                        </span>
+                        <div class="mitadSup">
+                            <span>
+                                <input id="codigopostal" name="codigopostal" value />
+                                <div class="label"><label for="codigopostal">Codigo postal</label></div>
+                            </span>
+                            <span>
+                                <input id="municipio" name="municipio" value />
+                                <div class="label"><label for="municipio">Municipio</label></div>
+                            </span>
+                        </div>
+                        
+                        <div class="mitadInf">
+                            <span>
+                                <select id="provincia" name="provincia">
+                                    <option value></option>
+                                    <option value="provincia1">Provincia 1</option>
+                                    <option value="provincia2">Provincia 2</option>
+                                    <option value="provincia3">Provincia 3</option>
+                                </select>
+                                <div class="label"><label for="provincia">Provincia</label></div>
+                            </span>
+                            <span>
+                                <select id="pais" name="pais">
+                                    <option value></option>
+                                    <option value="pais1">Pais 1</option>
+                                    <option value="pais2">Pais 2</option>
+                                    <option value="pais3">Pais 3</option>
+                                </select>
+                                <div class="label"><label for="pais">Pais</label></div>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p>
+                </li>
+                <li>
+                    <label class="titulo" for="email">Email</label>
+                    <div>
+                        <span>
+                            <input id="email" name="email" value />
+                        </span>
+                    </div>
+                    <p class="ayuda">Asegúrate de que sea valido</p>
+                </li>
+                <li>
+                    <label class="titulo" for="telefonofijo">Telefono <span class="requerido">*</span></label>
+                    <div class="telefonos">
+                        <span>
+                            <input id="telefonofijo" name="telefonofijo" value />
+                            <div class="label"><label for="telefonofijo">Fijo</label></div>
+                        </span>
+                        <span>
+                            <input id="telefonomovil" name="telefonomovil" value />
+                            <div class="label"><label for="telefonomovil">Movil</label></div>
+                        </span>
+                    </div>
+                    <p class="ayuda">Sin prefijo de pais y sin espacios en blanco</p>
+                </li>
+                <li>
+                    <input id="alta" type="submit" value="Darme de alta &rarr;" />
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>

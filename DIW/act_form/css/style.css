@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenedor{
+    display: inline;
+}
+
+li{
+    display: inline-block;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
+    
+    width: 80%;
+    padding: 1rem;
+}
+
+li .titulo{
+    float: left;
+    width: 10%;
+    font-size: larger;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.requerido{
+    color: red;
+}
+
+li div{
+    float: left;
+    width: 50%;
+}
+
+li div span{
+    display: inline-block;
+    padding: 1rem;
+    width: 80%;
+}
+
+li div span input, select{
+    width: 100%;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    border: 1px black solid;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+li:hover{
+    background-color: #FF9;
+    transition: background-color 0.8s;
+}
+li:hover .ayuda{
+    visibility: visible;
+}
+
+.ayuda{
+    visibility: hidden;
+    float: left;
+    width: 20%;
+    margin-left: 1rem;
+    font-weight: lighter;
+}
+
+#nombre{
+    width: 65%;
+}
+
+#alta{
+    float: right;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: rgb(247, 199, 111);
+}
+
+#alta:hover{
+    cursor: pointer;
+}
+
+input:focus, select:focus{
+    border: 0.11rem #E6B700 solid;
+    outline: none;
+}
+
+.label{
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 0.31rem;
+}
+
+.mitadInf, .mitadSup{
+    width: 50%;
+    float: left;
+}
+
+.mitadInf select, .mitadInf .label{
+    width: 100%;
+}
+
+.mitadSup input, .mitadSup .label{
+    width: 100%;
+}
+
+.telefonos span{
+    width: 45%;
+}
+
+.telefonos span input{
+    width: 65%;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+li:last-child:hover{
+    background-color: white;
+}

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.848);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+section.horario{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+section.horario table{
+    font-size: 0.7rem;
+}
+section.horario table, td,th{
+    border-collapse: collapse;
+
+}
+
+td,th{
+    padding: 1rem 1rem;    
+}
+
+th{
+    background-color: rgba(0, 0, 0, 0.848);
+    color: white;
+    border: solid 1px white;
+}
+
+td{
+    border: solid 1px rgba(0, 0, 0, 0.216);
+}

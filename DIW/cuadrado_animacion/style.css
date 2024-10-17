@@ -1,0 +1,14 @@
+.block{
+    height: 300px;
+    width: 300px;
+    animation-name: color-change;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+
+@keyframes color-change {
+    0%{background: #FF0000;}
+    50%{background: #FFC0CB}
+    100%{background: #0000FF;}
+}

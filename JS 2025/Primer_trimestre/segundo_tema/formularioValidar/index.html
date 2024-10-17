@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <form  id="formulario" action="." method="get">
+            <div id="formHead">
+                <img id="imgUsuario" src="pngegg.png">
+                <h2>Formulario de registro</h2>
+            </div>
+                <div class="row">
+                    <label for="formularioNombre">Nombre</label>
+                    <input type="text" id="formularioNombre" name="formularioNombre">
+                </div>
+                <div class="row">
+                    <label for="formularioApe">Apellidos</label>
+                    <input type="text" id="formularioApe" name="formularioApe">
+                </div>
+                <div class="row">
+                    <label for="formularioTel">Teléfono</label>
+                    <input type="text" id="formularioTel" name="formularioTel">
+                </div>
+                <div class="row">
+                    <label for="formularioPass">Pass</label>
+                    <input type="text" id="formularioPass" name="formularioPass">
+                </div>
+                <div class="row">
+                    <label for="formularioPassR">Confirmar Pass</label>
+                    <input type="text" id="formularioPassR" name="formularioPassR">
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="confirmar" name="confirmar" value="ok">
+                    <label for="confirmar" id="confirmarLabel"> Acepto condiciones</label>
+                </div>
+                <button id="botonRegistrar" disabled>
+                    Registrar
+                </button>
+
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

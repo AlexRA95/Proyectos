@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeros = [2, 3, 10, 1, 5, 2, 1, 25, 10];
+        let sinDuplis = numeros.filter( (valor,indice) => {
+            return numeros.indexOf(valor) === indice;
+        });
+
+        console.log(sinDuplis);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.titulos{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+#titulo{
+    color: blue;
+}

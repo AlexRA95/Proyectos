@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="cont"></div>
+    <script>
+        
+
+        function alumno(nombre, apellido, fecha_nacimiento) {
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Fecha_nacimiento = fecha_nacimiento;
+        }
+
+        let alumnos = [
+            new alumno("Juan", "Pérez", "2000-01-15"),
+            new alumno("María", "García", "1999-05-23"),
+            new alumno("Carlos", "López", "2001-07-30"),
+            new alumno("Ana", "Martínez", "2000-11-12"),
+            new alumno("Luis", "Rodríguez", "1998-03-05"),
+            new alumno("Elena", "González", "2002-09-17"),
+            new alumno("Miguel", "Sánchez", "1999-12-25"),
+            new alumno("Laura", "Fernández", "2001-04-10"),
+            new alumno("Javier", "Hernández", "2000-08-19"),
+            new alumno("Sofía", "Ruiz", "1998-06-14"),
+            new alumno("David", "Díaz", "2001-10-22"),
+            new alumno("Lucía", "Moreno", "1999-02-28"),
+            new alumno("Daniel", "Muñoz", "2000-05-07"),
+            new alumno("Paula", "Jiménez", "2002-03-16"),
+            new alumno("Alejandro", "Álvarez", "1998-09-09"),
+            new alumno("Marta", "Castillo", "2001-11-03"),
+            new alumno("Sergio", "Romero", "1999-07-21"),
+            new alumno("Natalia", "Vega", "2000-12-01"),
+            new alumno("Adrián", "Torres", "2002-01-18"),
+            new alumno("Isabel", "Ortega", "1998-04-27")
+        ];
+
+        function crearTabla() {
+            let cont = document.getElementById('cont');
+            let table = document.createElement('table');
+            table.style.border = '1px solid black';
+            let tbody = document.createElement('tbody');
+            tbody.setAttribute("id", "cuerpo");
+            let thead = document.createElement('thead');
+            let tr = document.createElement('tr');
+            tr.style.border = '1px solid black';
+            let col1 = document.createElement('th');
+            let col2 = document.createElement('th');
+            let col3 = document.createElement('th');
+            col1.style.border = '1px solid black';
+            col2.style.border = '1px solid black';
+            col3.style.border = '1px solid black';
+            col1.textContent = "Nombre";
+            col2.textContent = "Apellido";
+            col3.textContent = "Fecha de nacimiento";
+
+            tr.append(col1, col2, col3);
+            thead.appendChild(tr);
+            table.appendChild(thead);
+            table.appendChild(tbody);
+            cont.append(table);
+
+        }
+
+        function crearBoton() {
+            const botonAdd = document.createElement('button');
+            botonAdd.textContent = 'Añadir Alumno';
+            botonAdd.onclick = addAlumno;
+            document.getElementById('cont').appendChild(botonAdd);
+        }
+
+        function addAlumno() {
+            let cuerpo = document.getElementById("cuerpo");
+            let tr = document.createElement('tr');
+            let td1 = document.createElement('td');
+            let td2 = document.createElement('td');
+            let td3 = document.createElement('td');
+            td1.style.border = '1px solid black';
+            td2.style.border = '1px solid black';
+            td3.style.border = '1px solid black';
+            if (Number(alumnos.length) != 0) {
+                let random = Math.floor(Math.random() * Number(alumnos.length));
+                //Coger alumno aleatorio
+                console.log(random);
+                console.log(alumnos.length);
+
+
+
+                td1.textContent = alumnos[random].Nombre;
+                td2.textContent = alumnos[random].Apellido;
+                td3.textContent = alumnos[random].Fecha_nacimiento;
+
+                tr.append(td1, td2, td3);
+                cuerpo.appendChild(tr);
+
+                alumnos.splice(random, 1);
+
+            }else{
+                alert("Ya has añadido a todos los alumnos");
+            }
+        }
+
+        crearTabla();
+        crearBoton();
+    </script>
+</body>
+
+</html>

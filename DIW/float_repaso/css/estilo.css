@@ -1,0 +1,64 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: green;
+    height: 75px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 75px;
+    margin: 0;
+}
+
+article {
+    padding: 1%;
+    margin: 1%;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    flex: 300px;
+}
+
+img{
+    width: 300px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.btn{
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.test{
+    margin: 5rem;
+}

@@ -1,0 +1,20 @@
+Instrucciones:
+<body>
+
+    <div class=contenedor>
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+    </div>
+</body>
+
+Vamos a diseñar los puntos que nos aparecen cuando estamos esperando en una página.
+Utilizaremos variables:
+   :root {
+  --main-color: #ecf0f1;
+  --point-color: #555;
+  --size: 5px;
+}
+
+Los puntos estarán centrados en nuestro contenedor.
+Los puntos aumentarán de tamaño (el doble de su tamaño) uno detrás de otro de manera infinita.

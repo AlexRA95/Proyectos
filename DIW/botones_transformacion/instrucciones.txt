@@ -1,0 +1,29 @@
+Estilo General de los Botones:
+
+Establece un relleno (padding) de 10px en la parte superior y inferior y 20px en los lados.
+Elimina el borde utilizando border: none.
+Agrega un margen de 10px alrededor de los botones.
+Usa border-radius para redondear las esquinas de los botones en 5px.
+
+Botón Normal (btn-normal):
+Fondo de color de fondo #3498db.
+Texto en color blanco.
+Cuando el cursor está sobre este botón debe desplazarse en el eje x el tamaño del botón
+
+Botón de Tipo Outline (btn-outline):
+Establece un borde sólido de 2px de color #3498db.
+Fondo transparente (background: transparent).
+Texto en color #3498db.
+Cuando el cursor está sobre este botón debe rotar 30 deg en x y 20 deg en y
+
+
+Botón de Alerta (btn-alert):
+Fondo de color de fondo #e74c3c.
+Texto en color blanco.
+Estilos Hover y Active:
+Cuando el cursor esté sobre un botón alerta(:hover), aplícale una transformación de escala de 2 para agrandarlo .
+
+Cursores Personalizados:
+El botón normal (btn-normal) debe tener un cursor de tipo crosshair.
+El botón de tipo outline (btn-outline) debe tener un cursor de tipo pointer.
+El botón de alerta (btn-alert) debe tener un cursor de tipo help.

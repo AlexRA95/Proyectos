@@ -1,0 +1,6 @@
+Diseño centrado con un ancho de 960 px. 
+El contenido principal de la página se organiza en dos columnas, una de 260 px de ancho y la otra el espacio restante de 700 px.
+La lista que explica el contenido del libro se muestra como un texto a tres columnas del mismo ancho.
+Utiliza float
+Queremos utilizar el cursor help en la primera columna, en la segunda el cursor move
+El texto amarillo se volverá azul al colocarnos sobre él, puedes añadir alguna animación

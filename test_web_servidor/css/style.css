@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,li:hover{
+    font-size: 1.5rem;
+    transition: font-size 0.5s;
+}
+
+.titulo{
+    background-color: green;
+    color: aliceblue;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.titulo2{
+    color: aliceblue;
+}
+
+.caja{
+    background-color: rgb(5, 182, 5);
+    margin-left: 2rem;
+    border-radius: 1.5rem;
+}
+
+.caja:hover{
+    background-color: rgb(1, 109, 1);
+    margin-left: 2rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem 2rem;
+    transition: all 0.5s;
+}
+
+li{
+    color: aliceblue;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    width: 25rem;
+    padding-bottom: 2rem;
+    background-color: rgb(5, 182, 5);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+h1{
+    margin-left: 5rem;
+}
+
+input,select{
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+}
+
+#calc form{
+    width: 100%;
+}
+
+#calc form .numeros label{
+    width: 25%;
+}
+
+#calc form .numeros input{
+    width: 50%;
+}

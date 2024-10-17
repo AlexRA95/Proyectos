@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.titulo{
+    display: block;
+    text-align: center;
+    background: rgb(5,0,95);
+    background: linear-gradient(150deg, rgba(5,0,95,1) 0%, rgba(0,230,255,1) 100%); 
+}
+
+.col-izq{
+    width: 260px;
+    float: left;
+    cursor: help;
+}
+
+.col-izq ul li{
+    color: yellow;
+}
+
+.col-izq ul li:hover{
+    color: blue;
+    font-size: 1.4rem;
+    transition: all 0.55s linear;
+}
+
+.col-der{
+    width: 700px;
+    float: right;
+    cursor: move;
+}
+
+.col-der ul li{
+    display: block;
+    list-style: none;
+    float: left;
+    width: 28%;
+}
