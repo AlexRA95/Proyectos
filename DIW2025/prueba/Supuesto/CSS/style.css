@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-fondo: #4CAF50;
+    --color-texto: #eeeeee;
+    --tamanio-fuente: 0.75rem;
+}
+
+.cabecera{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: headerAni 1s ease-out;
+    
+}
+
+@keyframes headerAni {
+    0%{
+        transform: translateY(-10vh);
+        background-color: white;
+    }
+    100%{
+        background-color: var(--color-fondo);
+    }
+}
+
+
+.navegacion ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .navegacion ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.navegacion ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navegacion ul li a:hover{
+    color: grey;
+}
+
+.contenido section p{
+    text-align: center;
+    font-size: var(--tamanio-fuente);
+}
+
+#blancoynegro:hover{
+    filter: grayscale(1);
+}
+
+.pie{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.pie #boton{
+    background-color: #333;
+    cursor: pointer;
+    height: fit-content;
+    padding: 0.5rem;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 21rem;
+    justify-content: center;
+}
+
+img{
+    width: 10rem;
+    margin: 0.1rem;
+}
+
+#pelota{
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    left: -10vw;
+    animation: pelotaMove 10s 5s linear;
+}
+
+@keyframes pelotaMove {
+    0%{
+        transform: translateX(10vw);
+    }
+    25%{
+        transform: translateX(102vw);
+    }
+    50%{
+        transform: translateX(10vw);
+    }
+    100%{
+        transform: translateX(110vw);
+    }
+}

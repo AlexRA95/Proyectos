@@ -1,0 +1,78 @@
+body {
+	font-family: 'Parisienne', cursive;
+	font-size: 120%;
+	background-size: cover;
+	background-image: url(calleparis.jpg);
+	background-repeat: no-repeat;
+}
+
+small {
+	font-family: 'Leckerli One';
+	font-weight: bolder;
+}
+
+#wrapper {
+	width: 260px;
+	margin: 20%;
+	padding-left: 50px;
+	padding-right: 20px;
+	font-size: 1.2em;
+	background-color: rgba(226, 215, 188, 0.8);
+	border-radius: 2rem;
+	border: solid black 0.3rem;
+	background-position: 95% 60%;
+
+}
+
+#final {
+	font-family: 'Leckerli One', cursive;
+	padding-left: 50px;
+	padding-right: 20px;
+}
+
+.cargando {
+	position: relative;
+	color: #FFF;
+	margin-top: 2em;
+	letter-spacing: 0.08em;
+	text-transform: uppercase
+}
+
+.contenedor-loader {
+	width: 180px;
+	height: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.contenedor-loader div {
+	width: 30px;
+	height: 30px;
+	background-color: #FFF;
+	animation: salto 1s alternate infinite;
+}
+
+.contenedor-loader div:nth-child(2) {
+	animation-delay: 0.20s;
+}
+
+.contenedor-loader div:nth-child(3) {
+	animation-delay: 0.40s;
+}
+
+.contenedor-loader div:nth-child(4) {
+	animation-delay: 0.60s;
+}
+
+@keyframes salto {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}

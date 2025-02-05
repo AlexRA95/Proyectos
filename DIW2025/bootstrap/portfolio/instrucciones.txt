@@ -1,0 +1,8 @@
+	INSTRUCCIONES
+
+
+6. En la sección de proyectos, la imagen en el centro debe ser más grande que las otras dos. Utiliza las propiedades CSS para establecer un tamaño máximo de altura y ancho a las imágenes utilizando max-width y max-height. asegúrate de que las imágenes sean responsivas, utilizando clases de Bootstrap como img-fluid y d-block, puedes poner el marco que mas te guste a las fotos.1
+ 
+10. Cambio de icono en el nombre de la página 0,5
+El nombre de la página debe incluir un icono. Puedes buscar un icono relacionado con tecnología o diseño web y agregarlo al title en el encabezado, utilizando la etiqueta <link> para el favicon.
+

@@ -1,0 +1,28 @@
+.parent{
+    background: gray;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    grid-template-columns: 75px 125px;
+    gap: 20px;
+    justify-items: start;
+    align-items: end;
+    justify-content: start;
+    align-content: start;
+}
+
+.item1{
+    background-color: indigo;
+}
+
+.item2{
+    background-color: red;
+}
+
+.item3{
+    background-color: green;
+}
+
+.item4{
+    background-color: yellow;
+}

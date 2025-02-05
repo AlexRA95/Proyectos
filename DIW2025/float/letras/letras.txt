@@ -1,0 +1,1 @@
+Diseña una animación en la que un texto con formato h1 crezca al doble de tamaño en 1 seg, luego se reduzca a un 25% en 1seg  y finalmente vuelva a us tamaño original. El efecto se producirá al pasar el ratón por el texto y durará en total 3s. Los cambios serán lineales

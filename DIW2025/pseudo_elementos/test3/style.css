@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.producto {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+.producto h3 {
+    color: #333;
+}
+.producto p {
+    color: #777;
+}
+
+.producto.market::after {
+    content: "Oferta Black Friday";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transform: rotate(-10deg);
+}
+
+.producto.oferta::before {
+    content: "¡Oferta!";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff5733;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transform: rotate(-15deg);
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.informacion ul li::marker {
+    color: blue;
+    font-size: 1.2em;
+}

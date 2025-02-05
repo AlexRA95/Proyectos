@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "slogan slogan slogan quien img1"
+    "img2 servicio sobre img3 contacto"
+    "carrera carrera testimonio social social"
+    ;
+}
+
+.azul{
+    color: #83b7ae;
+}
+
+.contenedor div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+.icon{
+    width: auto;
+}
+
+.slogan{
+    grid-area: slogan;
+}
+.quien{
+    grid-area: quien;
+    background-color: #1c488f;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.servicio{
+    grid-area: servicio;
+    background-color: #3776d2;
+}
+.sobre{
+    grid-area: sobre;
+    background-color: #a1e1e1;
+}
+.img3{
+    grid-area: img3;
+}
+.contacto{
+    grid-area: contacto;
+    background-color: #ffd649;
+}
+.carrera{
+    grid-area: carrera;
+    background-image: url(images/bk-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonio{
+    grid-area: testimonio;
+    background-color: #1c488f;
+}
+.social{
+    grid-area: social;
+    background-image: url(images/bk-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 1080px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11,1fr);
+        grid-template-areas: 
+    "slogan"  
+    "quien" 
+    "img1"
+    "img2" 
+    "servicio" 
+    "sobre" 
+    "img3" 
+    "contacto"
+    "carrera"  
+    "testimonio" 
+    "social" 
+    ;
+    }
+}

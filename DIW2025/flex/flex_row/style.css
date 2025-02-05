@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0;     
+    margin: 0;  
+    width: fit-content;
+}
+
+
+li {
+    background-color: aquamarine;
+    padding: 0.5rem 1rem;
+    flex: 1;  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+

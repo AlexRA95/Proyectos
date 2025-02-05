@@ -1,0 +1,35 @@
+Instrucciones:
+
+En la imagen tenemos que aplicar un filtro para que aparezca en blanco y negro, al colocarnos sobre la imagen está volverá a tener color, la transición será de 1 seg
+
+		body {font-family: 'Handlee', cursive;
+			  font-size: 120%;
+			 
+			   }
+		h1 {color: rgb(84, 21, 213);
+			
+		}
+			
+		p:first-letter
+
+		small {font-variant:;
+				font-weight:;
+				color:rgb(84, 21, 213); }
+
+		#wrapper{width: 700px;
+					
+
+}					#letra-pirata{
+						
+						display:
+						justify-content:
+						
+					}
+					
+
+					img {
+						
+						width: 250px;
+	 				 }
+
+				

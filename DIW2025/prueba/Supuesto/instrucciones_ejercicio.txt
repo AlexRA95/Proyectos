@@ -1,0 +1,38 @@
+
+Instrucciones para el Ejercicio
+Font :Arial
+
+1. **Utiliza Flex para Posicionar los Componentes de la Página (1 puntos)**:
+   - Asegúrate de que todos los componentes de la página estén correctamente alineados utilizando Flex (es posible que algún componente necesite otro posicionamiento).
+
+2. **Media Queries (1 punto)**:
+   - Debes utilizar media Queries en tu CSS para que cuando el ancho de la pantalla sea menor a 768px, el menú de navegación pase a ser vertical.
+
+3. **Declaración de Variables (0.5 puntos)**:
+   - Declara tres variables con los colores del fondo de la cabecera, otra variable con el color del texto de la cabecera y una tercera  con el tamaño de la fuente del párrafo que debe ser el 75% del tamaño del elemento raíz. Debes utilizarla las variables en el ejercicio.
+
+4. **Cabecera (1,5 puntos)**:
+   - La cabecera debe tener un fondo de color verde (#4CAF50) con texto blanco centrado.
+   - Alineación del texto y uso adecuado de padding.
+La cabecera de la página incluye una animación, la animación consiste en hacer que la cabecera aparezca de manera suave desde arriba al cargarse la página. Al comienzo de la animación, la cabecera es completamente transparente  y se encuentra desplazada hacia arriba al final de la animación, la cabecera se vuelve completamente opaca  y regresa a su posición original. La animación dura 1 seg comienza rápidamente y luego desacelera suavemente
+
+5. **Barra de Navegación (1,5 punto)**:
+   - La barra de navegación debe tener un fondo oscuro (#333) y los enlaces deben ser blancos.
+   - Al pasar el ratón sobre los enlaces, deben cambiar de fondo a un color gris más claro y aumentar de tamaño ligeramente.
+   - Alineación del texto adecuada.
+
+7. **Estilo de Imágenes (1 puntos)**:
+   - Asegúrate de que las imágenes estén en un contenedor con Flexbox, con dos en una fila y una en la siguiente.
+
+8. **Pie de Página (1 puntos)**:
+   - El pie de página debe tener un fondo verde similar al de la cabecera
+   - Verifica el color de fondo, el color del texto y el padding.
+   - Utiliza Flex 
+
+9. **Cambio a Blanco y Negro en Imágenes (1 puntos)**:
+   - La imagen "imagen3" debe cambiar a blanco y negro al pasar el cursor sobre ella.
+
+10. **Botón con Puntero (0.25 puntos)**:
+   - El cursor del botón debe ser un puntero.
+
+11. **Movimiento de la pelota (1,25 punto) **. A los 5 seg de cargar  la página debe mostrarse una pelota situada en la parte izquierda del pie de página y desplazarse de izquierda a derecha dos veces durante 10 seg movimiento lineal, luego desaparece.

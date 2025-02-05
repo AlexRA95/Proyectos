@@ -1,0 +1,10 @@
+
+
+Fuente: font-family: Georgia, 'Times New Roman', Times, serif;}
+Fuente h1:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+Principal: Utilizad flex y justify-content.
+Division:anch : 48%;  height: 200px ;
+Hay texto que se alinea a la derecha, a la izquierda o centrado.
+La imagen cuatro debe girar 180 grados cuando ponemos el ratón sobre ella (la imagen, el texto no)
+
+	

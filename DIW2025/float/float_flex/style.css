@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: aqua;
+}
+
+h1{
+    background: linear-gradient(to bottom, 
+        red,       /* Rojo */
+        orange,    /* Naranja */
+        yellow,    /* Amarillo */
+        green,     /* Verde */
+        blue,      /* Azul */
+        indigo,    /* Índigo */
+        violet     /* Violeta */
+    );
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img{
+    width: 14rem;
+    display: inline;
+    margin: 1rem;
+}
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}
+
+.centrada{
+    display: flex !important; 
+    flex-direction: column !important;
+    align-items: center;
+}
+
+
+.centrada{
+    justify-self: center;
+}
+
+#centro{
+    text-align: center;
+}
+
+#giro:hover{
+    animation: girar 0.00001s infinite;
+}
+
+@keyframes girar {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.division{
+    width: 48%;
+    height: 200px;
+    display: inline;
+    background-color: blue;
+    padding: 1rem;
+}

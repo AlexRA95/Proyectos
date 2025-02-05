@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!--Barra lateral con filtro y foto de canción-->
+        <aside>
+            <div class="botones-Mac">
+                <div class="btn">
+                </div>
+                <div class="btn">
+                </div>
+                <div class="btn">
+                </div>
+            </div>
+
+            <div id="filter-drop" class="filtros">
+                <div class="filter-drop">
+                    <i id="filter-arrow" class='bx bxs-right-arrow'></i>
+                    <p>Filtros</p>
+                </div>
+                <p id="filter-all" class="display-none">Todos</p>
+                <p id="filter-fav" class="display-none">Favoritos</p>
+            </div>
+
+            <div class="song-img">
+                Lorem ipsum dolor sit amet
+            </div>
+        </aside>
+        <!--Contenedor principal-->
+        <main>
+            <!--Parte de arriba del spoti donde esta el buscador y botón de pausa-->
+            <nav>
+                <div id="top">
+                    <div class="input-search">
+                        <i class='bx bx-search-alt'></i>
+                        <input type="text" name="buscar" id="buscar" placeholder="Buscar...">
+                    </div>
+                    <div class="user">
+                        <img src="IMG/pepe.jpg" alt="user">
+                        <p>Pepe Viyuela</p>
+                    </div>
+                </div>
+                <div id="bot">
+                    <p>Music</p>
+                    <div class="pause">
+                        <button class="btn-pause">Pause</button>
+                        <i class='bx bxs-add-to-queue'></i>
+                    </div>
+                </div>
+            </nav>
+            <!--Donde se genera la tabla de cartas-->
+            <section>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo recusandae ea voluptatibus veniam sed consequatur, soluta ipsum sapiente similique itaque unde ex aspernatur natus doloremque facilis ducimus. Officiis, laboriosam hic.
+            </section>
+        </main>
+        
+    </div>
+    <!--Barra de audio-->
+    <footer>
+        Aqui viene la barra de carga de la canción
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>

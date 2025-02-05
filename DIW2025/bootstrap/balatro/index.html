@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Balatro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .btn-pay {
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+
+        .label-small {
+            font-size: 0.8rem;
+        }
+
+        .row {
+            margin-top: 1rem;
+        }
+
+        .container-bg {
+            background-color: rgb(230, 230, 230);
+        }
+    </style>
+</head>
+
+<body>
+
+    <video class="video-bg" src="VIDEO/background.mp4" autoplay muted loop></video>
+
+    <header class="bg-body text-dark d-flex justify-content-between align-content-center position-sticky top-0">
+        <div>
+            <img src="IMG/jokers/piedra.jpg" alt="Logo" class="w-25" />
+            <span class="fs-1 fuente-header">Cartas</span>
+        </div>
+
+        <button class="btn btn-warning h-50 align-self-center me-3 shadow-lg" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <i class="fa fa-house fs-1"></i>
+        </button>
+
+    </header>
+
+    <div class="offcanvas offcanvas-top h-75" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <p class="offcanvas-title h5" id="offcanvasTopLabel">Offcanvas top</p>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container w-50 border border-1 mt-3 pb-3 container-bg rounded">
+
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Enter Card Number">
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-3">
+                        <label class="form-label label-small">Expiry Month</label>
+                        <input type="text" class="form-control" placeholder="MM">
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label label-small">Expiry Year</label>
+                        <input type="text" class="form-control" placeholder="YY">
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label label-small">CCV</label>
+                        <input type="text" class="form-control" placeholder="CCV">
+                    </div>
+                    <div class="col-3">
+                        <p></p>
+                        <i class="bi bi-credit-card fs-1"></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Name on the card">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="checkbox" class="form-check-input" checked>
+                        <label class="form-label">Save details for fast payments <a href="#">learn how ?</a></label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-danger">CANCEL</button>
+                    </div>
+                    <div class="col offset-1">
+                        <button class="btn btn-warning ms-auto btn-pay text-white">PAY NOW</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <main class="hero mt-4 mb-5">
+        <section class="container">
+
+            <article class="row">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                            aria-label="First slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <article class="row">
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/01.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Pluto</h4>
+                                            <p class="card-text">Aumenta carta más alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/02.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Mercurio</h4>
+                                            <p class="card-text">Aumenta Pareja</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/03.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Urano</h4>
+                                            <p class="card-text">Aumenta Doble pareja</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/04.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Venus</h4>
+                                            <p class="card-text">Aumenta Trio</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/05.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Saturno</h4>
+                                            <p class="card-text">Aumenta Escalera</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/06.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Jupiter</h4>
+                                            <p class="card-text">Aumenta Color</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="row">
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/07.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Pluto</h4>
+                                            <p class="card-text">Aumenta carta más alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/08.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Mercurio</h4>
+                                            <p class="card-text">Aumenta Pareja</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/09.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Urano</h4>
+                                            <p class="card-text">Aumenta Doble pareja</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/10.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Venus</h4>
+                                            <p class="card-text">Aumenta Trio</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/11.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Saturno</h4>
+                                            <p class="card-text">Aumenta Escalera</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/planets/12.png" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Jupiter</h4>
+                                            <p class="card-text">Aumenta Color</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="row">
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/jokers/Jokers_1.jpg" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Pluto</h4>
+                                            <p class="card-text">Aumenta carta más alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/jokers/Jokers_100_142x190.jpg" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Mercurio</h4>
+                                            <p class="card-text">Aumenta Pareja</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/jokers/Jokers_101_142x190.jpg" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Urano</h4>
+                                            <p class="card-text">Aumenta Doble pareja</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/jokers/Jokers_102_142x190.jpg" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Venus</h4>
+                                            <p class="card-text">Aumenta Trio</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/jokers/Jokers_103_142x190.jpg" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Saturno</h4>
+                                            <p class="card-text">Aumenta Escalera</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="IMG/jokers/Jokers_104_142x190.jpg" alt="Title" />
+                                        <div class="card-body">
+                                            <h4 class="card-title">Jupiter</h4>
+                                            <p class="card-text">Aumenta Color</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-light text-dark text-center p-0 p-md-2 p-lg-5 position-sticky bottom-0 w-100">
+        <p class="fs-3">&copy; DIW - Alejandor Rodríguez Álvarez</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

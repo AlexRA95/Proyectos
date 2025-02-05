@@ -1,0 +1,44 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    background: grey;
+    gap: 10px;
+}
+
+.item{
+    background-color: blue;
+    color: #fff;
+    font-size: 2em;
+}
+
+/*
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(400px,600px));
+    grid-template-rows: repeat(2,1fr);
+    gap: 5x;
+}
+.item{
+    padding: 1em;
+}
+
+.item-1{
+    background-color: red;
+}
+
+.item-2{
+    background-color: aqua;
+}
+
+.item-3{
+    background-color: blueviolet;
+}
+
+.item-4{
+    background-color: burlywood;
+}
+
+.item-5{
+    background-color: coral;
+}
+*/

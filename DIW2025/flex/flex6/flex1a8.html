@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sidebar con menu</title>
+<style>
+  .contenedor{
+    display:flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+ 
+ .cabecera{
+flex-grow: 1;
+ }
+.contenido{
+    flex-grow:4;
+}
+
+.pie{
+    flex-grow: 1;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: aqua;
+    flex-grow: 1;
+    padding: 24px 12px;
+}
+
+.sidebar ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.sidebar ul li{
+  list-style: none;
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+}
+
+.cont{
+    background-color: green;
+    flex-grow: 3;
+    padding: 24px 12px;
+}
+</style>
+</head>
+<body>
+<div class="contenedor">
+
+<div class="cabecera">
+<h1>Tarjeta de presentacion</h1>
+</div>
+
+<div class="contenido">
+  <div class="main">
+    <div class="sidebar">
+        <ul>
+          <li>Home</li>
+          <li>Servicios</li>
+          <li>Opciones</li>
+          <li>Planos</li>
+          <li>Contacto</li>
+        </ul>
+    </div>
+    <div class="cont">
+        <p>Esto sería el contenido principal</p>
+    </div>
+</div>
+</div>
+
+<div class="pie">
+<h5>Pie de pagina</h5>
+</div>
+</div>
+</body>
+</html>
+         

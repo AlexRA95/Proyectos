@@ -1,0 +1,3 @@
+Se le ha quitado el margen y el padding a todos los elementos, se deja a los elementos de la clase loading-screen un posición fija y se le deja en el centro usando display flex justify-content:center y align-items:center.
+Luego al elemento de la clase loading se le da un tamaño fijo y le metemos la animación, que consta de girar la clase en 360º.
+También tenemos unos elementos span a los que les damos unos tamaños y unos colores y le metemos una animación que hace que cada elemento span aumente el tamaño en un 50%

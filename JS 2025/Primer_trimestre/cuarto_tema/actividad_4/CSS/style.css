@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.nota {
+    width: 100%;
+    height: auto;
+}
+
+.nota textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    resize: both;
+}
+
+#cuerpo{
+    height: 400px;
+}

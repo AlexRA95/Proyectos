@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+}
+
+.bien{
+    border: solid green 0px;
+}
+
+.mal{
+    border: solid red 0px;
+}
+
+body {
+    background-image: url(../IMG/reyes.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    min-height: 100%; 
+}
+
+@font-face {
+    font-family: navidad;
+    src: url(../FONTS/Merry\ Christmas\ 2021.ttf);
+}
+
+.fuente-navidad{
+    font-family: navidad;
+}
+
+h1{
+    text-shadow: 5px 0px 10px #000000;
+}
+
+#juguetes {
+    height: 10rem; 
+    overflow-y: scroll; 
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Enlace al archivo CSS de Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container text-center mt-5">
+    <!--  Las clases usan el formato {property}{side}-{size}, y {property}-{breakpoint}-{side}-{size} para sm, md, lg,xl y xxl -->
+    <!-- m clase margin, t margin-top. 5 se refiere a $spacer *3, los valores que puede tomar es de 0 a 5, se pueden agregar más  -->
+    <h1>Prueba de Bootstrap</h1>
+    <p>Este es un botón de ejemplo con Bootstrap:</p>
+    <!-- Botón de ejemplo -->
+    <button class="btn btn-primary">¡Haz clic aquí!</button>
+
+
+    <div class="container">
+      <div class="row d-flex flex-sm-row flex-column">
+        <div class="col-4 bg-primary text-white p-3">Columna 1</div>
+        <div class="col-4 bg-warning text-dark p-3">Columna 2</div>
+        <div class="col-4 bg-info text-white p-3">Columna 3</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class=" col-sm-6 col-md-10 col-lg-2 border border-secondary">
+        col 1
+      </div>
+      <div class=" col-sm-6 col-md-2 col-lg-10 border border-secondary">
+        col 2
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-4 offset-4 bg-secondary border border-dark m-1 rounded-3">
+          Una de dos columnas
+        </div>
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+      </div>
+      <div class="row justify-content-center ">
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+        <div class="col-4 rounded-3 bg-secondary border border-dark m-1">
+          Una de dos columnas
+        </div>
+      </div>
+    </div>
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning bg-dark">.text-warning</p>
+    <p class="text-info bg-dark">.text-info</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-dark">.text-dark</p>
+    <p class="text-body">.text-body</p>
+    <p class="text-muted">.text-muted</p>
+    <p class="text-white bg-dark">.text-white</p>
+    <p class="text-black-50">.text-black-50</p>
+    <p class="text-white-50 bg-dark">.text-white-50</p>
+  </div>
+  <!-- Enlace al archivo JS de Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

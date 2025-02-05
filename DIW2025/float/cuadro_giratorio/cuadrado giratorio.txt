@@ -1,0 +1,1 @@
+El objetivo es crear un bloque cuadrado de 200px de ancho por 100px de alto que gire en la pantalla 360º en sentido horario una sola vez y quede girado al final de la animación. El giro será lento al inicio y al final, y durará 3 segundos.

@@ -1,0 +1,17 @@
+body{
+    width: 100%;
+}
+
+.circulo{
+    background-color: red;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    animation: mover 5s infinite alternate;
+}
+
+@keyframes mover {
+    100%{
+        transform: translateX(85vh);
+    }
+}

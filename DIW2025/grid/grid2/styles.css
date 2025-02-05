@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* auto-fill con un tamaño mínimo de 250px por columna */
+  gap: 20px; /* Espacio entre los elementos */
+  padding: 20px;
+}
+
+.item img {
+  width: 100%; /* Las imágenes deben llenar el ancho de sus contenedores */
+  height: auto; /* Mantener la proporción de las imágenes */
+  display: block; /* Quitar espacio extra debajo de las imágenes */
+  border-radius: 8px; /* Bordes redondeados en las imágenes */
+}
+
+
+/*Utiliza auto-fit, explica que sucede, cambia el tamaño de la pantalla utiliza vh en el tamaño de las imágnes imágenes

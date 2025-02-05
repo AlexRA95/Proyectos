@@ -1,0 +1,19 @@
+1. Utilizaremos Flex. 
+
+2.Cada imagen debe ocupar el 10% del tama�o de la ventana, a pesar de eso deben ocupar todo el ancho de la ventana, si aumentamos  el tama�o de la pantalla deber� aumentar el tama�o de la imagen 1 y 3 el doble que las otras im�genes.
+
+3. Cambiaremos las  disposici�n de las im�genes, queremos que se vean todas con su tama�o real, aunque ocupen varias filas.
+
+4. Cambiamos el orden de las  im�genes, el orden ser� 2, 3, 1, 4, 5 
+
+5.Las esquinas de las im�genes debe ser redondeadas. 
+ 
+<body>
+    <div class="galeria">
+        <div class=imagen id="uno"></div>
+        <div class=imagen id="dos"></div>
+        <div class=imagen id="tres"></div>
+        <div class=imagen id="cuatro"></div>
+        <div class=imagen id="cinco"></div>
+    </div>
+</body>
